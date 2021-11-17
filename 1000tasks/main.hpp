@@ -311,7 +311,7 @@ int sides(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinat
     return 0;
 }
 //task 21.2
-int perimeter_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int  side_b, int side_c){
+int perimeter_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int side_b, int side_c){
     return side_a + side_b + side_c / 2;
 }
 
