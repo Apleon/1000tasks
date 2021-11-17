@@ -42,4 +42,30 @@ int main(){
     std::cout << sum_segments_ac_and_bc(2, 3, 4) << std::endl;
     std::cout << "task18##################" << std::endl;
     std::cout << product_of_segments_ac_and_bc(3, 4, 5) << std::endl;
+    std::cout << "task19##################" << std::endl;
+    std::cout << perimetr_and_square_of_rectangle(4, 5, 6, 7) << std::endl;
+    std::cout << "task20##################" << std::endl;
+    std::cout << point_length(5, 6, 7, 8) << std::endl;
+    std::cout << "task21##################" << std::endl;
+    std::cout << perimeter_and_square_of_triangle(1, 2, 3, 4, 5, 6, 7, 8, 9) << std::endl;
+    std::cout << "task21##################" << std::endl;
+    std::cout << perimeter_and_square_of_triangle(2, 3, 4, 5, 6, 7, 8, 9, 10) << std::endl;
+    std::cout << "task22##################" << std::endl;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

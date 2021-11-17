@@ -294,13 +294,13 @@ int square_of_point_rectangle(int coordinate_x1, int coordinate_y1, int coordina
 
 
 //task 19
-int perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
-    std::cout << perimeter_of_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2) << square_of_point_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2);
+int perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2) {
+    std::cout << perimeter_of_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2) << square_of_point_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2) << std::endl;
     return 0;
 }
 
 //task 20
-int pointLength(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
+int point_length(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
     return sqrt(pow(coordinate_x1 - coordinate_x2, 2) + pow(coordinate_y1 - coordinate_y2, 2));
 }
 //task 21.1
@@ -329,15 +329,15 @@ int perimeter_and_square_of_triangle(int coordinate_x1, int coordinate_y1, int c
     return 0;
 }
 
-////task 22
-//int swipe(int A, int B) {
-//    int t = A;
-//    A = B;
-//    B = t;
-//    std::cout << "A = ", A, "B = ", B;
-//    return A, B;
-//}
-//
+//task 22
+int change_content(veriable_a, veriable_b){
+    int t = A;
+    A = B;
+    B = t;
+    std::cout << "A = ", A, "B = ", B;
+    return A, B;
+}
+
 ////task 23
 //int swipe2(int A, int B, int C) {
 //    int t = C;
