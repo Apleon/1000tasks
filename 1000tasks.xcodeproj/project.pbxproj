@@ -58,8 +58,8 @@
 		4F793E2927456E2B0063331B /* 1000tasks */ = {
 			isa = PBXGroup;
 			children = (
-				4F793E3327456F250063331B /* main.hpp */,
 				4F793E3227456F250063331B /* main.cpp */,
+				4F793E3327456F250063331B /* main.hpp */,
 			);
 			path = 1000tasks;
 			sourceTree = "<group>";

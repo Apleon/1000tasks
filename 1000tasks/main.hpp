@@ -283,36 +283,22 @@ int product_of_segments_ac_and_bc(int point_a, int point_b, int point_c){
 
 //task 19.1
 
-//int rectangle_perimeter(int coordinate_x1, int coordinate_y1, int coordinate_x2 int coordinate_y2 {
-//    if (x1 > x2 && y1 > y2) {
-//        std::cout << "x2 and y2 must be > x1 and y2";
-//    }
-//    int xy1 = x1 + y1;
-//    int xy2 = x2 + y2;
-//    double d = xy2 - xy1;
-//    double a = sqrt(d) / 2;
-//    double p = a * 4;
-//    return p;
-//}
+int perimeter_of_rectangle(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
+    return 2 * abs(coordinate_x1-coordinate_x2)+abs(coordinate_y1 - coordinate_y2);
+}
 
-////task 19.2
-//int square_of_point_rectalnge(int x1, int x2, int y1, int y2) {
-//    if (x1 > x2 && y1 > y2) {
-//        std::cout << "x2 and y2 must be > x1 and y2";
-//    }
-//    int xy1 = x1 + y1;
-//    int xy2 = x2 + y2;
-//    double d = xy2 - xy1;
-//    double a = sqrt(d) / 2;
-//    return pow(a, 2);
-//}
-//
-//
-////task 19
-//void rectPoint(int x1, int x2, int y1, int y2) {
-//    std::cout << perimeter_of_point_rectangle(x1, x2, y1, y2) << square_of_point_rectalnge(x1, x2, y1, y2);
-//}
-//
+//task 19.2
+int square_of_point_rectangle(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
+    return abs(coordinate_x1 - coordinate_x2) * abs(coordinate_y1 - coordinate_y2);
+}
+
+
+//task 19
+int perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
+    std::cout << perimeter_of_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2) << square_of_point_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2);
+    return 0;
+}
+
 ////task 20
 //int pointLength(int x1, int x2, int y1, int y2) {
 //    if (x1 > x2 && y1 > y2) {
@@ -322,7 +308,7 @@ int product_of_segments_ac_and_bc(int point_a, int point_b, int point_c){
 //    double xy2 = x2 + y2;
 //    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 //}
-//
+
 ////task 21.1
 //int perimeter_of_point_triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
 //    if (x1 > x2 && y1 > y2 && x1 > x3 && y1 > y3) {
