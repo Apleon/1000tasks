@@ -310,30 +310,25 @@ int sides(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinat
     side_c= sqrt(pow(coordinate_x3 - coordinate_x1, 2) + pow(coordinate_y3 - coordinate_y1, 2));
     return 0;
 }
-//task 21.2
+//task 21.2.1
 int perimeter_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int side_b, int side_c){
+    return side_a + side_b + side_c;
+}
+//task 21.2.2
+int half_per_of_tringle(int side_a, int side_b, int side_c){
     return side_a + side_b + side_c / 2;
 }
+//task 21.2.3
+int square_of_tringle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int side_b, int side_c){
+    return sqrt(half_per_of_tringle(side_a, side_b, side_c) * (half_per_of_tringle(side_a, side_b, side_c) - side_a) * (half_per_of_tringle(side_a, side_b, side_c) - side_b) * (half_per_of_tringle(side_a, side_b, side_c) - side_c));
+}
 
-////task 21.3
-//int square_of_point_triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
-//    if (x1 > x2 && y1 > y2 && x1 > x3 && y1 > y3) {
-//        std::cout << "x2 and y2 and x3 and y3 must be > x1 and y1";
-//    }
-//    double a = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-//    double b = sqrt(pow(x2 - x3, 2) + pow(y2 - y3, 2));
-//    double c = sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2));
-//    double half_perimeter = (a + b + c) / 2;
-//    return sqrt(half_perimeter * (half_perimeter - a) * (half_perimeter - b) * (half_perimeter - c));
-//}
-//
-////task 21
-//int pointTriangle(int x1, int y1, int x2, int y2, int x3, int y3) {
-//    std::cout << perimeter_of_point_triangle(x1, y1, x2, y2, x3, y3) << square_of_point_triangle(x1, y1, x2, y2, x3, y3);
-//    return 0;
-//}
+//task 21
+int perimeter_and_square_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int side_b, int side_c){
+    std::cout << perimeter_of_triangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2, coordinate_x3, coordinate_y3, side_a, side_b, side_c) << std::endl << square_of_tringle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2, coordinate_x3, coordinate_y3, side_a, side_b, side_c) << std::endl;
+    return 0;
+}
 
-//
 ////task 22
 //int swipe(int A, int B) {
 //    int t = A;
