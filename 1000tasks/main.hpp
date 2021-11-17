@@ -299,15 +299,10 @@ int perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int c
     return 0;
 }
 
-////task 20
-//int pointLength(int x1, int x2, int y1, int y2) {
-//    if (x1 > x2 && y1 > y2) {
-//        std::cout << "x2 and y2 must be > x1 and y1";
-//    }
-//    double xy1 = x1 + y1;
-//    double xy2 = x2 + y2;
-//    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-//}
+//task 20
+int pointLength(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
+    return sqrt(pow(coordinate_x1 - coordinate_x2, 2) + pow(coordinate_y1 - coordinate_y2, 2));
+}
 
 ////task 21.1
 //int perimeter_of_point_triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
@@ -337,7 +332,7 @@ int perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int c
 //    std::cout << perimeter_of_point_triangle(x1, y1, x2, y2, x3, y3) << square_of_point_triangle(x1, y1, x2, y2, x3, y3);
 //    return 0;
 //}
-//
+
 //
 ////task 22
 //int swipe(int A, int B) {
