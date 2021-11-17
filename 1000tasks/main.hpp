@@ -303,19 +303,19 @@ int perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int c
 int pointLength(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coordinate_y2) {
     return sqrt(pow(coordinate_x1 - coordinate_x2, 2) + pow(coordinate_y1 - coordinate_y2, 2));
 }
+//task 21.1
+int sides(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int  side_b, int side_c){
+    side_a = sqrt(pow(coordinate_x1 - coordinate_x2, 2) + pow(coordinate_y1 -coordinate_y2, 2));
+    side_b = sqrt(pow(coordinate_x2 - coordinate_x3, 2) + pow(coordinate_y2 - coordinate_y3, 2));
+    side_c= sqrt(pow(coordinate_x3 - coordinate_x1, 2) + pow(coordinate_y3 - coordinate_y1, 2));
+    return 0;
+}
+//task 21.2
+int perimeter_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int  side_b, int side_c){
+    return side_a + side_b + side_c / 2;
+}
 
-////task 21.1
-//int perimeter_of_point_triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
-//    if (x1 > x2 && y1 > y2 && x1 > x3 && y1 > y3) {
-//        std::cout << "x2 and y2 and x3 and y3 must be > x1 and y1";
-//    }
-//    double a = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-//    double b = sqrt(pow(x2 - x3, 2) + pow(y2 - y3, 2));
-//    double c = sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2));
-//    return a + b + c;
-//}
-//
-////task 21.2
+////task 21.3
 //int square_of_point_triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
 //    if (x1 > x2 && y1 > y2 && x1 > x3 && y1 > y3) {
 //        std::cout << "x2 and y2 and x3 and y3 must be > x1 and y1";
