@@ -371,55 +371,55 @@ int function_value_2 (int value_x) {
 }
 //
 //task 27.1
-int squaring_number_a(int num_a) {
+int squaring_number_a_1(int num_a) {
     return num_a * num_a;
 }
 
 //task 27.2
-int cubing_number_a(int num_a) {
-    return squaring_number_a(num_a) * squaring_number_a(num_a);
+int cubing_number_a_1(int num_a){
+    return squaring_number_a_1(num_a) * squaring_number_a_1(num_a);
 }
 
 //task 27.3
-int raising_number_a_to_8th_power(int num_a) {
-    return cubing_number_a(num_a) * cubing_number_a(num_a);;
+int raising_number_a_to_8th_power_1(int num_a) {
+    return cubing_number_a_1(num_a) * cubing_number_a_1(num_a);
 }
 
 //task 27
-int all_found_powers_of_number_a(int num_a) {
-    std::cout << squaring_number_a(num_a) << std::endl << cubing_number_a(num_a) << std::endl << raising_number_a_to_8th_power(num_a) << std::endl;
+int all_found_powers_of_number_a_1(int num_a) {
+    std::cout << squaring_number_a_1(num_a) << std::endl << cubing_number_a_1(num_a) << std::endl << raising_number_a_to_8th_power_1(num_a) << std::endl;
     return 0;
 }
 
-////task 28.1
-//int degree_of_a_in_3(int a) {
-//    int a_in_3 = degree_of_a_in_2(a) * a;
-//    return a_in_3;
-//}
-//
-////task 28.2
-//int degree_of_a_in_5(int a) {
-//    int a_in_5 = degree_of_a_in_3(a) * degree_of_a_in_2(a);
-//    return a_in_5;
-//}
-//
-////task 28.3
-//int degree_of_a_in_10(int a) {
-//    int a_in_10 = degree_of_a_in_5(a) * degree_of_a_in_5(a);
-//    return a_in_10;
-//}
-//
-////task 28.4
-//int degree_of_a_in_15(int a) {
-//    int a_in_15 = degree_of_a_in_5(a) * degree_of_a_in_10(a);
-//    return a_in_15;
-//}
-//
-////task 28
-//int degreeOfA2(int A) {
-//    std::cout << degree_of_a_in_2(a) << degree_of_a_in_3(a) << degree_of_a_in_5(a) << degree_of_a_in_10(a) << degree_of_a_in_15(a);
-//    return 0;
-//}
+//task 28.1
+int squaring_number_a_2(int num_a) {
+    return num_a * num_a;
+}
+int qu
+
+//task 28.2
+int degree_of_a_in_5(int a) {
+    int a_in_5 = degree_of_a_in_3(a) * degree_of_a_in_2(a);
+    return a_in_5;
+}
+
+//task 28.3
+int degree_of_a_in_10(int a) {
+    int a_in_10 = degree_of_a_in_5(a) * degree_of_a_in_5(a);
+    return a_in_10;
+}
+
+//task 28.4
+int degree_of_a_in_15(int a) {
+    int a_in_15 = degree_of_a_in_5(a) * degree_of_a_in_10(a);
+    return a_in_15;
+}
+
+//task 28
+int degreeOfA2(int A) {
+    std::cout << degree_of_a_in_2(a) << degree_of_a_in_3(a) << degree_of_a_in_5(a) << degree_of_a_in_10(a) << degree_of_a_in_15(a);
+    return 0;
+}
 //
 ////task 29
 //int degreesToRadians(double a) {
