@@ -329,14 +329,16 @@ int perimeter_and_square_of_triangle(int coordinate_x1, int coordinate_y1, int c
     return 0;
 }
 
-////task 22
-//int change_content(veriable_a, veriable_b){
-//    int t = A;
-//    A = B;
-//    B = t;
-//    std::cout << "A = ", A, "B = ", B;
-//    return A, B;
-//}
+//task 22
+
+int change_content_in_veriables(int veriable_a, int veriable_b){
+    veriable_a = (veriable_a + veriable_b);
+    veriable_b = (veriable_a - veriable_b);
+    veriable_a = (veriable_a - veriable_b);
+    std::cout << veriable_a << std::endl<< veriable_b << std::endl;
+    return 0;
+}
+
 
 ////task 23
 //int swipe2(int A, int B, int C) {
