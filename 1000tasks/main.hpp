@@ -420,28 +420,26 @@ int all_found_powers_of_number_a_2(int num_a) {
     return 0;
 }
 
-//
-////task 29
-//int degreesToRadians(double a) {
-//    double p = 3.14;
-//    if (a < 0 || a > 360) {
-//        std::cout << "a must be > 0 and < 360";
-//    }
-//    double rad = ((a * 180) / p) / a;
-//    return rad;
-//}
-//
-////task 30
-//int radiansToDegrees(double a) {
-//    double p = 3.14;
-//    if (a < 0 || a > 2 * p) {
-//        std::cout << "a must be > 0 and < 2 pi";
-//    }
-//    double rad = (a * 180) / p;
-//    double aRad = rad * a;
-//    return aRad;
-//}
-//
+
+//task 29
+double determine_value_of_angle_in_radians(double angle_a) {
+    if (angle_a < 0 || angle_a > 360) {
+        std::cout << "angle_a must be > 0 and < 360";
+    }
+    return (angle_a * M_PI) / 180;
+}
+
+//task 30
+int radiansToDegrees(double a) {
+    double p = 3.14;
+    if (a < 0 || a > 2 * p) {
+        std::cout << "a must be > 0 and < 2 pi";
+    }
+    double rad = (a * 180) / p;
+    double aRad = rad * a;
+    return aRad;
+}
+
 ////task 31
 //int fahrenheit_to_celsius_converter(double t) {
 //    return (t - 32) * 5 / 9;

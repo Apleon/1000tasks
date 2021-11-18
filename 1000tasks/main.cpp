@@ -59,7 +59,17 @@ int main(){
     std::cout << "task26##################" << std::endl;
     std::cout << function_value_2(2) << std::endl;
     std::cout << "task27##################" << std::endl;
-    std::cout << all_found_powers_of_number_a(2) << std::endl;
+    std::cout << all_found_powers_of_number_a_1(2) << std::endl;
+    std::cout << "task28##################" << std::endl;
+    std::cout << all_found_powers_of_number_a_2(2) << std::endl;
+    std::cout << "task29##################" << std::endl;
+    std::cout << determine_value_of_angle_in_radians(6)<< std::endl;
+    std::cout << "task30##################" << std::endl;
+    
+
+    
+    
+    
     
     
 
