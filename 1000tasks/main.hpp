@@ -361,15 +361,14 @@ int change_content_in_veriables_3(int veriable_a, int veriable_b, int veriable_c
 }
 
 //task 25
-int function_value (int value_x) {
+int function_value_1 (int value_x) {
     return 3 * pow(value_x, 6) - 6 * pow(value_x, 2) - 7;
 }
 
-////task 26
-//int whatFunktion2(int x) {
-//    int y = 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
-//    return 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
-//}
+//task 26
+int function_value_2 (int value_x) {
+    return 4 * pow(value_x - 3, 6) - 7 * pow(value_x - 3, 3) + 2;
+}
 //
 ////task 27.1
 //int degree_of_a_in_2(int a) {

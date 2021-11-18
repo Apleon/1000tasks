@@ -55,9 +55,9 @@ int main(){
     std::cout << "task24##################" << std::endl;
     std::cout << change_content_in_veriables_3(5, 6, 7) << std::endl;
     std::cout << "task25##################" << std::endl;
-    std::cout << function_value(2) << std::endl;
+    std::cout << function_value_1(2) << std::endl;
     std::cout << "task26##################" << std::endl;
-    
+    std::cout << function_value_2(2) << std::endl;
 
     
     
