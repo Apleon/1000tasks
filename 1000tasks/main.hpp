@@ -350,16 +350,16 @@ int change_content_in_veriables_2(int veriable_a, int veriable_b, int veriable_c
     return 0;
 }
 
-////task 24
-//int swipe3(int A, int B, int C) {
-//    int t = B;
-//    C = A;
-//    B = C;
-//    A = t;
-//    std::cout << "A = ", A, "B = ", B, "C = ", C;
-//    return A, B, C;
-//}
-//
+//task 24
+int change_content_in_veriables_3(int veriable_a, int veriable_b, int veriable_c){
+    veriable_a = (veriable_a + veriable_b + veriable_c);
+    veriable_c = (veriable_a - veriable_b - veriable_c);
+    veriable_b = (veriable_a - veriable_b - veriable_c);
+    veriable_a = (veriable_a - veriable_b - veriable_c);
+    std::cout << veriable_a << std::endl << veriable_b << std::endl << veriable_c << std::endl;
+    return 0;
+}
+
 ////task 25
 //int whatFunction1(int x) {
 //    int y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
