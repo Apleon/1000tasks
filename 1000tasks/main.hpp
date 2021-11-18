@@ -360,12 +360,11 @@ int change_content_in_veriables_3(int veriable_a, int veriable_b, int veriable_c
     return 0;
 }
 
-////task 25
-//int whatFunction1(int x) {
-//    int y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-//    return 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-//}
-//
+//task 25
+int function_value (int value_x) {
+    return 3 * pow(value_x, 6) - 6 * pow(value_x, 2) - 7;
+}
+
 ////task 26
 //int whatFunktion2(int x) {
 //    int y = 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
