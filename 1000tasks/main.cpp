@@ -49,8 +49,10 @@ int main(){
     std::cout << "task21##################" << std::endl;
     std::cout << perimeter_and_square_of_triangle(4, 5, 2, 3, 5, 3, 4, 3, 2) << std::endl;
     std::cout << "task22##################" << std::endl;
-    std::cout << change_content_in_veriables(4, 6) << std::endl;
+    std::cout << change_content_in_veriables_1(4, 6) << std::endl;
     std::cout << "task23##################" << std::endl;
+    std::cout << change_content_in_veriables_2(2, 4, 5) << std::endl;
+    
     
 
     

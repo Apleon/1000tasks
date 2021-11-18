@@ -331,7 +331,7 @@ int perimeter_and_square_of_triangle(int coordinate_x1, int coordinate_y1, int c
 
 //task 22
 
-int change_content_in_veriables(int veriable_a, int veriable_b){
+int change_content_in_veriables_1(int veriable_a, int veriable_b){
     veriable_a = (veriable_a + veriable_b);
     veriable_b = (veriable_a - veriable_b);
     veriable_a = (veriable_a - veriable_b);
@@ -340,16 +340,16 @@ int change_content_in_veriables(int veriable_a, int veriable_b){
 }
 
 
-////task 23
-//int swipe2(int A, int B, int C) {
-//    int t = C;
-//    C = B;
-//    B = A;
-//    A = t;
-//    std::cout << "A = ", A, "B = ", B, "C = ", C;
-//    return A, B, C;
-//}
-//
+//task 23
+int change_content_in_veriables_2(int veriable_a, int veriable_b, int veriable_c){
+    veriable_a = (veriable_a + veriable_b + veriable_c);
+    veriable_b = (veriable_a - veriable_b - veriable_c);
+    veriable_c = (veriable_a - veriable_b - veriable_c);
+    veriable_a = (veriable_a - veriable_b - veriable_c);
+    std::cout << veriable_a << std::endl << veriable_b << std::endl << veriable_c << std::endl;
+    return 0;
+}
+
 ////task 24
 //int swipe3(int A, int B, int C) {
 //    int t = B;
