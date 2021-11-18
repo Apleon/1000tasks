@@ -449,4 +449,19 @@ int convert_celsius_into_farenheit(double temperature) {
     return (temperature * 9 / 5 + 32);
 }
 
-//git 
+//task 33.1
+double price_candies_for_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
+    return price_a / candies_kilogram_x;
+}
+//task 33.2
+double price_candies_for_y_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
+    return candies_kilogram_y * price_candies_for_kilogram(candies_kilogram_x, price_a, candies_kilogram_y);
+}
+double price_candies_for_kilogram_and_y_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
+    std::cout << price_candies_for_kilogram(candies_kilogram_x, price_a, candies_kilogram_y) << std::endl << price_candies_for_y_kilogram(candies_kilogram_x, price_a, candies_kilogram_y) << std::endl;
+    return 0;
+}
+
+
+
+

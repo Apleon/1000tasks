@@ -70,6 +70,10 @@ int main(){
     std::cout << convert_farenheit_into_celsius(65) << std::endl;
     std::cout << "task32##################" << std::endl;
     std::cout << convert_celsius_into_farenheit(5) << std::endl;
+    std::cout << "task33##################" << std::endl;
+    std::cout << price_candies_for_kilogram_and_y_kilogram(4, 6, 8) << std::endl;
+    
+    
     
     
     
