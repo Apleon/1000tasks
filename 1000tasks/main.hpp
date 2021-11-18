@@ -422,22 +422,21 @@ int all_found_powers_of_number_a_2(int num_a) {
 
 
 //task 29
-double determine_value_of_angle_in_radians(double angle_a) {
+double determine_value_of_angle_in_radians_1(int angle_a) {
     if (angle_a < 0 || angle_a > 360) {
-        std::cout << "angle_a must be > 0 and < 360";
+        std::cout << "angle_a must be > 0 and < 360" << std::endl;
+        return 1;
     }
     return (angle_a * M_PI) / 180;
 }
 
 //task 30
-int radiansToDegrees(double a) {
-    double p = 3.14;
-    if (a < 0 || a > 2 * p) {
-        std::cout << "a must be > 0 and < 2 pi";
+double determine_value_of_angle_in_radians_2(double angle_a) {
+    if (angle_a < 0 || angle_a > 2 * M_PI) {
+        std::cout << "ngle_a must be > 0 and < 2PI";
+        return 1;
     }
-    double rad = (a * 180) / p;
-    double aRad = rad * a;
-    return aRad;
+    return (angle_a * 180) / M_PI;
 }
 
 ////task 31

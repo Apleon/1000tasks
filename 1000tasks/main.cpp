@@ -63,8 +63,10 @@ int main(){
     std::cout << "task28##################" << std::endl;
     std::cout << all_found_powers_of_number_a_2(2) << std::endl;
     std::cout << "task29##################" << std::endl;
-    std::cout << determine_value_of_angle_in_radians(6)<< std::endl;
+    std::cout << determine_value_of_angle_in_radians_1(90) << std::endl;
     std::cout << "task30##################" << std::endl;
+    std::cout << determine_value_of_angle_in_radians_2(3.14) << std::endl;
+    
     
 
     
