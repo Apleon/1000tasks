@@ -439,11 +439,11 @@ double determine_value_of_angle_in_radians_2(double angle_a) {
     return (angle_a * 180) / M_PI;
 }
 
-////task 31
-//int fahrenheit_to_celsius_converter(double t) {
-//    return (t - 32) * 5 / 9;
-//}
-//
+//task 31
+int convert_celsius_into_farenheit (double temperature) {
+    return (temperature - 32) * 5 / 9;
+}
+
 ////task 32
 //int celsius_to_fahrenheit_converter(double t) {
 //    return (t + 32) / 5 / 9;
