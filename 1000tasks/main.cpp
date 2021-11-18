@@ -67,7 +67,12 @@ int main(){
     std::cout << "task30##################" << std::endl;
     std::cout << determine_value_of_angle_in_radians_2(3.14) << std::endl;
     std::cout << "task31##################" << std::endl;
-    std::cout << convert_celsius_into_farenheit(72) << std::endl;
+    std::cout << convert_farenheit_into_celsius(65) << std::endl;
+    std::cout << "task32##################" << std::endl;
+    std::cout << convert_celsius_into_farenheit(5) << std::endl;
+    
+    
+    
     
     
     

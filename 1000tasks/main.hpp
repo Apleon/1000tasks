@@ -440,17 +440,13 @@ double determine_value_of_angle_in_radians_2(double angle_a) {
 }
 
 //task 31
-int convert_celsius_into_farenheit (double temperature) {
+int convert_farenheit_into_celsius (double temperature) {
     return (temperature - 32) * 5 / 9;
 }
 
-////task 32
-//int celsius_to_fahrenheit_converter(double t) {
-//    return (t + 32) / 5 / 9;
-//}
-//
-////task 33
-//int candies_count(int a, int y, int x) {
-//    return 0;
-//}
+//task 32
+int convert_celsius_into_farenheit(double temperature) {
+    return (temperature * 9 / 5 + 32);
+}
 
+//git 
