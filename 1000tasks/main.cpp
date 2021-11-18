@@ -5,7 +5,7 @@
 
 int main(){
     setlocale(LC_ALL, "ru");
-    
+
     std::cout << "task1##################" << std::endl;
     std::cout << perimeter_square_count(1) << std::endl;
     std::cout << "task2##################" << std::endl;
@@ -47,20 +47,11 @@ int main(){
     std::cout << "task20##################" << std::endl;
     std::cout << point_length(5, 6, 7, 8) << std::endl;
     std::cout << "task21##################" << std::endl;
-    std::cout << perimeter_and_square_of_triangle(1, 2, 3, 4, 5, 6, 7, 8, 9) << std::endl;
-    std::cout << "task21##################" << std::endl;
-    std::cout << perimeter_and_square_of_triangle(2, 3, 4, 5, 6, 7, 8, 9, 10) << std::endl;
+    std::cout << perimeter_and_square_of_triangle(4, 5, 2, 3, 5, 3, 4, 3, 2) << std::endl;
     std::cout << "task22##################" << std::endl;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+   
     
     
     
