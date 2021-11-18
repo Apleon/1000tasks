@@ -370,30 +370,27 @@ int function_value_2 (int value_x) {
     return 4 * pow(value_x - 3, 6) - 7 * pow(value_x - 3, 3) + 2;
 }
 //
-////task 27.1
-//int degree_of_a_in_2(int a) {
-//    int a_in_2 = a * a;
-//    return a_in_2;
-//}
-//
-////task 27.2
-//int degree_of_a_in_4(int a) {
-//    int a_int_4 = degree_of_a_in_2(a) * degree_of_a_in_2(a);
-//    return a_int_4;
-//}
-//
-////task 27.3
-//int degree_of_a_in_8(int a) {
-//    int a_in_8 = degree_of_a_in_4(a) * degree_of_a_in_4(a);
-//    return a_in_8;
-//}
-//
-////task 27
-//int degreeOfA(int A) {
-//    std::cout << degree_of_a_in_2(a) << degree_of_a_in_4(a) << degree_of_a_in_8(a);
-//    return 0;
-//}
-//
+//task 27.1
+int squaring_number_a(int num_a) {
+    return num_a * num_a;
+}
+
+//task 27.2
+int cubing_number_a(int num_a) {
+    return squaring_number_a(num_a) * squaring_number_a(num_a);
+}
+
+//task 27.3
+int raising_number_a_to_8th_power(int num_a) {
+    return cubing_number_a(num_a) * cubing_number_a(num_a);;
+}
+
+//task 27
+int all_found_powers_of_number_a(int num_a) {
+    std::cout << squaring_number_a(num_a) << std::endl << cubing_number_a(num_a) << std::endl << raising_number_a_to_8th_power(num_a) << std::endl;
+    return 0;
+}
+
 ////task 28.1
 //int degree_of_a_in_3(int a) {
 //    int a_in_3 = degree_of_a_in_2(a) * a;
