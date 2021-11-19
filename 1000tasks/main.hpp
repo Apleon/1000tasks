@@ -560,7 +560,9 @@ double number_of_full_tons(double weight_m){
 }
 
 //task 43
-double number_of_full_kbit()
+double number_of_full_kbit(double size){
+    return size / 1024;
+}
 
 
 

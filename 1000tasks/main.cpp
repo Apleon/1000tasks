@@ -2,7 +2,6 @@
 #include "main.hpp"
 #include <cmath>
 #include "math.h"
-using namespace std;
 
 int main(){
     setlocale(LC_ALL, "ru");
@@ -92,6 +91,7 @@ int main(){
     std::cout <<"task42##################" << std::endl;
     std::cout << number_of_full_tons(100) << std::endl;
     std::cout <<"task43##################" << std::endl;
+    std::cout << number_of_full_kbit(1600) << std::endl;
     
     
     
