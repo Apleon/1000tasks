@@ -548,6 +548,7 @@ double system_of_linear_equations(double ratio_a_1, double ratio_b_1, double rat
     std::cout << coordinate_x(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl << coordinate_y(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl;
     return 0;
 }
+//task41
 
 
 
