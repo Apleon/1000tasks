@@ -493,6 +493,13 @@ int distance_between_cars(int speed_car_1, int speed_car_2, int distance, int ti
     return distance + speed_car_1 * time + speed_car_2 * time;
 }
 
+//task 37
+int distance_between_cars_2(int speed_car_1, int speed_car_2, int distance, int time){
+    return abs(distance - (speed_car_1 * time + speed_car_2 * time));
+}
+
+
+
 
 
 
