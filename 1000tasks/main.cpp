@@ -85,35 +85,8 @@ int main(){
     std::cout << equation(2, 4) << std::endl;
     std::cout << "task39##################" << std::endl;
     std::cout << roots_of_quadratic_equation(1, -8, 15) << std::endl;
-    
-//        if((b*b - 4*a*c) >= 0) //Если дискриминант больше или равен 0
-//        {
-//            x = ( -1*b + sqrt(b*b - 4*a*c) ) / (2 * a);
-//            cout << "Первый корень равен " << x << endl;
-//            x = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
-//            cout << "Второй корень равен " << x << endl;
-//        }
-//        else
-//        {
-//            cout << "Дискриминант меньше 0, корни невещественные." << endl;
-//        }
-//
-//        return 0;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
+    std::cout <<"task40##################" << std::endl;
+    std::cout << system_of_linear_equations(2, 3, 4, 5, 6, 7) << std::endl;
     
     
     

@@ -519,6 +519,7 @@ double root_x1(int ratio_a, int ratio_b, int ratio_c){
 double root_x2 (int ratio_a, int ratio_b, int ratio_c){
     return -1 * ratio_b - sqrt(discriminant(ratio_a, ratio_b, ratio_c)) / (2 * ratio_a);
 }
+//task 39
 double roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
     if(discriminant(ratio_a, ratio_b, ratio_c) >= 0){
         std::cout << root_x1(ratio_a, ratio_b, ratio_c) << std::endl << root_x2(ratio_a, ratio_b, ratio_c) << std::endl;
@@ -530,6 +531,24 @@ double roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
        }
        return 1;
 }
+///task40
+double ratio_d(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
+}
+
+double coordinate_x(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    return (ratio_c_1 * ratio_b_2 - ratio_c_2 * ratio_b_1) / ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
+}
+
+double coordinate_y(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    return (ratio_a_1 * ratio_c_2 - ratio_a_2 * ratio_c_1) / ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
+}
+
+double system_of_linear_equations(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    std::cout << coordinate_x(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl << coordinate_y(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl;
+    return 0;
+}
+
 
 
 
