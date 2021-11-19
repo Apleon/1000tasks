@@ -564,6 +564,17 @@ double number_of_full_kbit(double size){
     return size / 1024;
 }
 
+//task44
+double number_of_segments_b_placed_on_segment_a(int segment_a, int segments_b){
+    if (segment_a > segments_b){
+        return segment_a / segments_b;
+    }
+    else{
+        std::cout << "You pass wrong values" << std::endl;
+        return 1;
+    }
+}
+
 
 
 

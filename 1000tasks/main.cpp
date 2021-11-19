@@ -92,6 +92,11 @@ int main(){
     std::cout << number_of_full_tons(100) << std::endl;
     std::cout <<"task43##################" << std::endl;
     std::cout << number_of_full_kbit(1600) << std::endl;
+    std::cout <<"task44##################" << std::endl;
+    std::cout << number_of_segments_b_placed_on_segment_a(6, 3) << std::endl;
+    
+    
+    
     
     
     
