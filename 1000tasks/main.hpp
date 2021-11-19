@@ -24,9 +24,8 @@ int square_of_rectangle_count(int side_a, int side_b) {
 }
 
 //task 3
-int perimeter_and_square_of_rectangle(int side_a, int side_b) {
+void perimeter_and_square_of_rectangle(int side_a, int side_b) {
     std::cout << square_of_rectangle_count(side_a, side_b) << std::endl <<  perimeter_of_rectangle_count(side_a, side_b) << std::endl;
-    return 0;
 }
 //
 //task 4
@@ -45,9 +44,8 @@ int surface_area(int edge_length) {
 }
 
 ////task 5
-int  cube_volume_and_surface_area (int edge_length) {
+void cube_volume_and_surface_area (int edge_length) {
     std::cout << cube_volume(edge_length) << std::endl << surface_area(edge_length) << std::endl;
-    return 0;
 }
 
 //task 6.1
@@ -65,11 +63,8 @@ int surface_area(int edge_length_a, int edge_length_b, int edge_length_c) {
 }
 
 //task 6
-int vol_of_rect_parall_and_surf_area(int edge_length_a, int edge_length_b, int edge_length_c) {
-    
+void vol_of_rect_parall_and_surf_area(int edge_length_a, int edge_length_b, int edge_length_c) {
     std::cout << volume_of_rectangular_parallelepiped(edge_length_a, edge_length_b, edge_length_c) << std::endl << surface_area(edge_length_a, edge_length_b, edge_length_c) << std::endl;
-    
-    return 0;
 }
 
 //task 7.1
@@ -82,9 +77,8 @@ int square_of_circle(double radius) {
 }
 
 //task 7
-int length_and_square_of_circle (double radius) {
+void length_and_square_of_circle (double radius) {
     std::cout << length_of_circle(radius) << std::endl << square_of_circle(radius) << std::endl;
-    return 0;
 }
 
 //task 8
@@ -130,9 +124,8 @@ int quot_sq_of_nonzero_numbers(int num_a, int num_b) {
 }
 
 //task 10
-int sum_diff_prod_quot_of_nonzero_numbers(int num_a, int num_b) {
+void sum_diff_prod_quot_of_nonzero_numbers(int num_a, int num_b) {
     std::cout << sum_sq_of_nonzero_numbers(num_a, num_b) << std::endl << diff_sq_of_nonzero_numbers(num_a, num_b) << std::endl << prod_sq_of_nonzero_numbers(num_a, num_b) << std::endl << quot_sq_of_nonzero_numbers(num_a, num_b) << std::endl;
-    return 0;
 }
 
 //task 11.1
@@ -169,9 +162,8 @@ int quot_of_modules_nonzero_numbers(int num_a, int num_b) {
 
 
 //task 11
-int sum_diif_prod_quot_of_modules_nonzero_numbers(int num_a, int num_b) {
+void sum_diif_prod_quot_of_modules_nonzero_numbers(int num_a, int num_b) {
     std::cout << sum_of_modules_nonzero_numbers(num_a, num_b) << std::endl << diff_of_modules_nonzero_numbers(num_a, num_b) << std::endl << prod_of_modules_nonzero_numbers(num_a, num_b) << std::endl << quot_of_modules_nonzero_numbers(num_a, num_b) << std::endl;
-    return 0;
 }
 
 //task 12.1
@@ -185,9 +177,8 @@ int perimeter_of_right_triangle(int cathet_a, int cathet_b, int hypotenuse) {
 }
 
 //task 12
-int hypotenuse_and_perimeter_of_right_triangle(int cathet_a, int cathet_b, int hypotenuse) {
+void hypotenuse_and_perimeter_of_right_triangle(int cathet_a, int cathet_b, int hypotenuse) {
     std::cout << hypotenuse_of_triangle(cathet_a, cathet_b) << std::endl << perimeter_of_right_triangle(cathet_a, cathet_b, hypotenuse) << std::endl;
-    return 0;
 }
 
 //task 13.1
@@ -212,10 +203,9 @@ int square_of_circle_3(int square_of_circle_1, int square_of_circle_2) {
 }
 
 //task 13
-int square_of_circles(int radius_1, int radius_2) {
+void square_of_circles(int radius_1, int radius_2) {
     std::cout << square_of_circle_1(radius_1, radius_2) << std::endl << square_of_circle_2(radius_1, radius_2) << std::endl <<
     square_of_circle_3(28, 12) << std::endl;
-    return 0;
 }
 
 //task 14.1
@@ -229,9 +219,8 @@ int square_circ_limited_by_circle(int lenght_l) {
 }
 
 //task 14
-int radius_and_square_of_circle_bounded_by_circle(int lenght_l) {
+void radius_and_square_of_circle_bounded_by_circle(int lenght_l) {
     std::cout << radius_circ_limited_by_circle(lenght_l) << std::endl << square_circ_limited_by_circle(lenght_l) << std::endl;
-    return 0;
 }
 
 //task 15.1
@@ -245,9 +234,8 @@ int lenght_circ_limited_by_circle(int square) {
 }
 
 // task 15
-int diameter_and_length_of_circ_limited_by_circle(int square) {
+void diameter_and_length_of_circ_limited_by_circle(int square) {
     std::cout << diameter_circ_limited_by_circle(square) << std::endl << lenght_circ_limited_by_circle(square) << std::endl;
-    return 0;
 }
 
 //task 16
@@ -294,9 +282,8 @@ int square_of_point_rectangle(int coordinate_x1, int coordinate_y1, int coordina
 
 
 //task 19
-int perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2) {
+void perimetr_and_square_of_rectangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2){
     std::cout << perimeter_of_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2) << square_of_point_rectangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2) << std::endl;
-    return 0;
 }
 
 //task 20
@@ -304,11 +291,10 @@ int point_length(int coordinate_x1, int coordinate_y1, int coordinate_x2,int coo
     return sqrt(pow(coordinate_x1 - coordinate_x2, 2) + pow(coordinate_y1 - coordinate_y2, 2));
 }
 //task 21.1
-int sides(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int  side_b, int side_c){
+void sides(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int  side_b, int side_c){
     side_a = sqrt(pow(coordinate_x1 - coordinate_x2, 2) + pow(coordinate_y1 -coordinate_y2, 2));
     side_b = sqrt(pow(coordinate_x2 - coordinate_x3, 2) + pow(coordinate_y2 - coordinate_y3, 2));
-    side_c= sqrt(pow(coordinate_x3 - coordinate_x1, 2) + pow(coordinate_y3 - coordinate_y1, 2));
-    return 0;
+    side_c = sqrt(pow(coordinate_x3 - coordinate_x1, 2) + pow(coordinate_y3 - coordinate_y1, 2));
 }
 //task 21.2.1
 int perimeter_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int side_b, int side_c){
@@ -324,40 +310,36 @@ int square_of_tringle(int coordinate_x1, int coordinate_y1, int coordinate_x2, i
 }
 
 //task 21
-int perimeter_and_square_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int side_b, int side_c){
+void perimeter_and_square_of_triangle(int coordinate_x1, int coordinate_y1, int coordinate_x2, int coordinate_y2, int coordinate_x3, int coordinate_y3, int side_a, int side_b, int side_c){
     std::cout << perimeter_of_triangle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2, coordinate_x3, coordinate_y3, side_a, side_b, side_c) << std::endl << square_of_tringle(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2, coordinate_x3, coordinate_y3, side_a, side_b, side_c) << std::endl;
-    return 0;
 }
 
 //task 22
 
-int change_content_in_veriables_1(int veriable_a, int veriable_b){
+void change_content_in_veriables_1(int veriable_a, int veriable_b){
     veriable_a = (veriable_a + veriable_b);
     veriable_b = (veriable_a - veriable_b);
     veriable_a = (veriable_a - veriable_b);
     std::cout << veriable_a << std::endl<< veriable_b << std::endl;
-    return 0;
 }
 
 
 //task 23
-int change_content_in_veriables_2(int veriable_a, int veriable_b, int veriable_c){
+void change_content_in_veriables_2(int veriable_a, int veriable_b, int veriable_c){
     veriable_a = (veriable_a + veriable_b + veriable_c);
     veriable_b = (veriable_a - veriable_b - veriable_c);
     veriable_c = (veriable_a - veriable_b - veriable_c);
     veriable_a = (veriable_a - veriable_b - veriable_c);
     std::cout << veriable_a << std::endl << veriable_b << std::endl << veriable_c << std::endl;
-    return 0;
 }
 
 //task 24
-int change_content_in_veriables_3(int veriable_a, int veriable_b, int veriable_c){
+void change_content_in_veriables_3(int veriable_a, int veriable_b, int veriable_c){
     veriable_a = (veriable_a + veriable_b + veriable_c);
     veriable_c = (veriable_a - veriable_b - veriable_c);
     veriable_b = (veriable_a - veriable_b - veriable_c);
     veriable_a = (veriable_a - veriable_b - veriable_c);
     std::cout << veriable_a << std::endl << veriable_b << std::endl << veriable_c << std::endl;
-    return 0;
 }
 
 //task 25
@@ -386,9 +368,8 @@ int raising_number_a_to_8th_power_1(int num_a) {
 }
 
 //task 27
-int all_found_powers_of_number_a_1(int num_a) {
+void all_found_powers_of_number_a_1(int num_a) {
     std::cout << squaring_number_a_1(num_a) << std::endl << raising_number_a_to_4th_power_1(num_a) << std::endl << raising_number_a_to_8th_power_1(num_a) << std::endl;
-    return 0;
 }
 
 //task 28.1
@@ -415,9 +396,8 @@ int raising_number_a_to_15th_power(int num_a) {
 }
 
 //task 28
-int all_found_powers_of_number_a_2(int num_a) {
+void all_found_powers_of_number_a_2(int num_a) {
     std::cout << squaring_number_a_2(num_a) << std::endl << cubing_number_a(num_a) << std::endl << raising_number_a_to_5th_power(num_a) << std::endl << raising_number_a_to_10th_power(num_a) << std::endl << raising_number_a_to_15th_power(num_a) << std::endl;
-    return 0;
 }
 
 
@@ -457,27 +437,25 @@ double price_candies_for_kilogram(double candies_kilogram_x, double price_a, dou
 double price_candies_for_y_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
     return candies_kilogram_y * price_candies_for_kilogram(candies_kilogram_x, price_a, candies_kilogram_y);
 }
-double price_candies_for_kilogram_and_y_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
+void price_candies_for_kilogram_and_y_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
     std::cout << price_candies_for_kilogram(candies_kilogram_x, price_a, candies_kilogram_y) << std::endl << price_candies_for_y_kilogram(candies_kilogram_x, price_a, candies_kilogram_y) << std::endl;
-    return 0;
 }
 
-//task 34
+//task 34.1
 double price_chocolate_candies(double candies_kilogram_x, double price_a){
     return price_a/candies_kilogram_x;
 }
-
+//task 34.2
 double price_toffes_candie(double candies_kilogram_y, double price_b){
     return price_b / candies_kilogram_y;
 }
-
+//task 34.3
 double price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
     return price_chocolate_candies(candies_kilogram_x, price_a) / price_toffes_candie(candies_kilogram_y, price_b);
 }
-
-double price_chocolate_and_toffes_candies_price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
+//task 34
+void price_chocolate_and_toffes_candies_price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
     std::cout << price_chocolate_candies(candies_kilogram_x, price_a) << std::endl << price_toffes_candie(candies_kilogram_y, price_b) << std::endl << price_difference(candies_kilogram_x, price_a, candies_kilogram_y, price_b) << std::endl;
-    return 0;
 }
 
 //task 35
@@ -512,44 +490,41 @@ double discriminant(int ratio_a, int ratio_b, int ratio_c){
     return pow(ratio_b, 2) - 4 * ratio_a * ratio_c;
 }
 
-//task 39.1
+//task 39.2
 double root_x1(int ratio_a, int ratio_b, int ratio_c){
     return -1 * ratio_b + sqrt(discriminant(ratio_a, ratio_b, ratio_c)) / (2 * ratio_a);
 }
+//task 39.3
 double root_x2 (int ratio_a, int ratio_b, int ratio_c){
     return -1 * ratio_b - sqrt(discriminant(ratio_a, ratio_b, ratio_c)) / (2 * ratio_a);
 }
 //task 39
-double roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
+void roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
     if(discriminant(ratio_a, ratio_b, ratio_c) >= 0){
         std::cout << root_x1(ratio_a, ratio_b, ratio_c) << std::endl << root_x2(ratio_a, ratio_b, ratio_c) << std::endl;
-        return 0;
        }
     
        else{
            std::cout << "The discriminant is less than 0, the roots are insubstantial." << std::endl;
        }
-       return 1;
 }
-///task40
+//task40.1
 double ratio_d(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
     return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
 }
-
+//task40.2
 double coordinate_x(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
     return (ratio_c_1 * ratio_b_2 - ratio_c_2 * ratio_b_1) / ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
 }
-
+//task 40.3
 double coordinate_y(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
     return (ratio_a_1 * ratio_c_2 - ratio_a_2 * ratio_c_1) / ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
 }
-
-double system_of_linear_equations(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+//task 40
+void system_of_linear_equations(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
     std::cout << coordinate_x(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl << coordinate_y(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl;
-    return 0;
 }
 //task41
-
 double number_of_full_meters(double distance_l){
     return distance_l / 100;
 }
@@ -574,6 +549,19 @@ double number_of_segments_b_placed_on_segment_a(int segment_a, int segments_b){
         return 1;
     }
 }
+
+//task45
+int length_of_unoccupied_part_of_segment_a(int segment_a, int segments_b){
+    if (segment_a > segments_b){
+        return segment_a % segments_b;
+    }
+    else{
+        std::cout << "You pass wrong values" << std::endl;
+        return 1;
+    }
+}
+
+
 
 
 
