@@ -478,7 +478,15 @@ double price_difference(double candies_kilogram_x, double price_a, double candie
 double price_chocolate_and_toffes_candies_price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
     std::cout << price_chocolate_candies(candies_kilogram_x, price_a) << std::endl << price_toffes_candie(candies_kilogram_y, price_b) << std::endl << price_difference(candies_kilogram_x, price_a, candies_kilogram_y, price_b) << std::endl;
     return 0;
-    
+}
+
+//task 35
+int path_covered_by_boat(int speed, int flow_rate, int driving_time_on_lake, int driving_time_on_river){
+    if (flow_rate > speed){
+        std::cout << "You pass wrong values" << std::endl;
+        return 1;
+    }
+    return speed * driving_time_on_lake + (speed - flow_rate) * driving_time_on_river;
 }
 
 
