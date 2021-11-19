@@ -89,6 +89,12 @@ int main(){
     std::cout << system_of_linear_equations(2, 3, 4, 5, 6, 7) << std::endl;
     std::cout <<"task41##################" << std::endl;
     std::cout << number_of_full_meters(60) << std::endl;
+    std::cout <<"task42##################" << std::endl;
+    std::cout << number_of_full_tons(100) << std::endl;
+    
+    
+    
+    
     
     
     

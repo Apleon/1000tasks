@@ -554,6 +554,11 @@ double number_of_full_meters(double distance_l){
     return distance_l / 100;
 }
 
+//task42
+double number_of_full_tons(double weight_m){
+    return weight_m / 1000;
+}
+
 
 
 
