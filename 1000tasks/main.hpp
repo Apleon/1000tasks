@@ -550,6 +550,10 @@ double system_of_linear_equations(double ratio_a_1, double ratio_b_1, double rat
 }
 //task41
 
+double number_of_full_meters(double distance_l){
+    return distance_l / 100;
+}
+
 
 
 

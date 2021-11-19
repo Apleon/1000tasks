@@ -87,6 +87,9 @@ int main(){
     std::cout << roots_of_quadratic_equation(1, -8, 15) << std::endl;
     std::cout <<"task40##################" << std::endl;
     std::cout << system_of_linear_equations(2, 3, 4, 5, 6, 7) << std::endl;
+    std::cout <<"task41##################" << std::endl;
+    std::cout << number_of_full_meters(60) << std::endl;
+    
     
     
     
