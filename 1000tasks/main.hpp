@@ -462,6 +462,28 @@ double price_candies_for_kilogram_and_y_kilogram(double candies_kilogram_x, doub
     return 0;
 }
 
+//task 34
+double price_chocolate_candies(double candies_kilogram_x, double price_a){
+    return price_a/candies_kilogram_x;
+}
+
+double price_toffes_candie(double candies_kilogram_y, double price_b){
+    return price_b / candies_kilogram_y;
+}
+
+double price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
+    return price_chocolate_candies(candies_kilogram_x, price_a) / price_toffes_candie(candies_kilogram_y, price_b);
+}
+
+double price_chocolate_and_toffes_candies_price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
+    std::cout << price_chocolate_candies(candies_kilogram_x, price_a) << std::endl << price_toffes_candie(candies_kilogram_y, price_b) << std::endl << price_difference(candies_kilogram_x, price_a, candies_kilogram_y, price_b) << std::endl;
+    return 0;
+    
+}
+
+
+
+
 
 
 
