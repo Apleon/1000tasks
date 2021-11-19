@@ -80,6 +80,10 @@ int main(){
     std::cout << distance_between_cars(40, 60, 40, 2) << std::endl;
     std::cout << "task37##################" << std::endl;
     std::cout << distance_between_cars_2(60, 40, 60, 2) << std::endl;
+    std::cout << "task38##################" << std::endl;
+    std::cout << equation(2, 4) << std::endl;
+    
+    
     
     
     

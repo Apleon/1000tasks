@@ -498,6 +498,15 @@ int distance_between_cars_2(int speed_car_1, int speed_car_2, int distance, int 
     return abs(distance - (speed_car_1 * time + speed_car_2 * time));
 }
 
+//task 38
+int equation(int ratio_a, int ratio_b){
+    if (ratio_a == 0){
+        std::cout << "You pass wrong values" << std::endl;
+        return 1;
+    }
+    return -ratio_b / ratio_a;
+}
+
 
 
 
