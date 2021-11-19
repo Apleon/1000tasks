@@ -488,6 +488,11 @@ int path_covered_by_boat(int speed, int flow_rate, int driving_time_on_lake, int
     }
     return speed * driving_time_on_lake + (speed - flow_rate) * driving_time_on_river;
 }
+//task 36
+int distance_between_cars(int speed_car_1, int speed_car_2, int distance, int time){
+    return distance + speed_car_1 * time + speed_car_2 * time;
+}
+
 
 
 

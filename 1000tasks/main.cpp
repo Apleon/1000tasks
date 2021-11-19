@@ -77,6 +77,7 @@ int main(){
     std::cout << "task35##################" << std::endl;
     std::cout << path_covered_by_boat(20, 7, 30, 45) << std::endl;
     std::cout << "task36##################" << std::endl;
+    std::cout << distance_between_cars(40, 60, 40, 2) << std::endl;
     
     
     
