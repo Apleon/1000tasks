@@ -2,6 +2,7 @@
 #include "main.hpp"
 #include <cmath>
 #include "math.h"
+using namespace std;
 
 int main(){
     setlocale(LC_ALL, "ru");
@@ -82,7 +83,22 @@ int main(){
     std::cout << distance_between_cars_2(60, 40, 60, 2) << std::endl;
     std::cout << "task38##################" << std::endl;
     std::cout << equation(2, 4) << std::endl;
+    std::cout << "task39##################" << std::endl;
+    std::cout << roots_of_quadratic_equation(1, -8, 15) << std::endl;
     
+//        if((b*b - 4*a*c) >= 0) //Если дискриминант больше или равен 0
+//        {
+//            x = ( -1*b + sqrt(b*b - 4*a*c) ) / (2 * a);
+//            cout << "Первый корень равен " << x << endl;
+//            x = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
+//            cout << "Второй корень равен " << x << endl;
+//        }
+//        else
+//        {
+//            cout << "Дискриминант меньше 0, корни невещественные." << endl;
+//        }
+//
+//        return 0;
     
     
     

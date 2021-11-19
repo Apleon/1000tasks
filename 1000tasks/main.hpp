@@ -507,6 +507,32 @@ int equation(int ratio_a, int ratio_b){
     return -ratio_b / ratio_a;
 }
 
+//task 39.1
+double discriminant(int ratio_a, int ratio_b, int ratio_c){
+    return pow(ratio_b, 2) - 4 * ratio_a * ratio_c;
+}
+
+//task 39.1
+double root_x1(int ratio_a, int ratio_b, int ratio_c){
+    return -1 * ratio_b + sqrt(discriminant(ratio_a, ratio_b, ratio_c)) / (2 * ratio_a);
+}
+double root_x2 (int ratio_a, int ratio_b, int ratio_c){
+    return -1 * ratio_b - sqrt(discriminant(ratio_a, ratio_b, ratio_c)) / (2 * ratio_a);
+}
+double roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
+    if(discriminant(ratio_a, ratio_b, ratio_c) >= 0){
+        std::cout << root_x1(ratio_a, ratio_b, ratio_c) << std::endl << root_x2(ratio_a, ratio_b, ratio_c) << std::endl;
+        return 0;
+       }
+    
+       else{
+           std::cout << "The discriminant is less than 0, the roots are insubstantial." << std::endl;
+       }
+       return 1;
+}
+
+
+
 
 
 
