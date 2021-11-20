@@ -649,6 +649,11 @@ int crossed_out_first_digit_on_left_and_attributed_to_right(int three_digit_numb
     return (three_digit_number % 100 / 10 * 100) + (three_digit_number % 10) * 10 + (three_digit_number / 100);
 }
 
+//task 54
+int crossed_out_first_digit_on_right_and_attributed_to_right(int three_digit_number){
+    return (three_digit_number % 10) * 100 + (three_digit_number / 100) * 10 + (three_digit_number % 100 / 10);
+}
+
 
 
 

@@ -109,9 +109,13 @@ int main(){
     std::cout <<"task51##################" << std::endl;
     sum_and_multiplication_of_numbers_three_digit_number(188);
     std::cout <<"task52##################" << std::endl;
-    std::cout << three_digit_number_from_right_to_left(228);
+    std::cout << three_digit_number_from_right_to_left(228) << std::endl;
     std::cout <<"task53##################" << std::endl;
     std::cout << crossed_out_first_digit_on_left_and_attributed_to_right(687) << std::endl;
+    std::cout <<"task54##################" << std::endl;
+    std::cout << crossed_out_first_digit_on_right_and_attributed_to_right(783) << std::endl;
+    
+    
     
     
     
