@@ -598,6 +598,23 @@ int first_digit_out_of_hundreds(int three_digit_number){
     return three_digit_number / 100;
 }
 
+//task50.1
+int units_of_number_three_digit_number(int three_digit_number){
+    return three_digit_number % 10;
+}
+//task 50.2
+int dozens_of_number_three_digit_number(int three_digit_number){
+    return three_digit_number % 100 / 10;
+}
+
+//task 50
+void units_dozens_of_number_three_digit_number(int three_digit_number){
+    std::cout << units_of_number_three_digit_number(three_digit_number) << std::endl << dozens_of_number_three_digit_number(three_digit_number) << std::endl;
+}
+
+
+
+
 
 
 
