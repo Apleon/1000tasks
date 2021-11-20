@@ -100,6 +100,10 @@ int main(){
     dozens_and_units_of_number(12);
     std::cout <<"task47##################" << std::endl;
     sum_and_miltiplication_of_twodigit_number(13);
+    std::cout <<"task48##################" << std::endl;
+    std::cout << number_obtained_by_rearranging_digits(12) << std::endl;
+  
+     
     
    
     

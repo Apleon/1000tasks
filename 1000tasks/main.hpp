@@ -588,6 +588,10 @@ void sum_and_miltiplication_of_twodigit_number(int two_digit_number){
     std::cout << sum_of_twodigit_number(two_digit_number) << std::endl << multiplication_of_twodigit_number(two_digit_number) << std::endl;
 }
 
+//task48
+int number_obtained_by_rearranging_digits(int two_digit_number){
+    return (two_digit_number % 10 * 10) + (two_digit_number / 10);
+}
 
 
 
