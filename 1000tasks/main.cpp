@@ -101,7 +101,9 @@ int main(){
     std::cout <<"task47##################" << std::endl;
     sum_and_miltiplication_of_twodigit_number(13);
     std::cout <<"task48##################" << std::endl;
-    std::cout << number_obtained_by_rearranging_digits(12) << std::endl;
+    std::cout << twodigit_number_obtained_by_rearranging_digits(12) << std::endl;
+    std::cout <<"task49##################" << std::endl;
+    std::cout << first_digit_out_of_hundreds(120) << std::endl;
   
      
     

@@ -589,9 +589,15 @@ void sum_and_miltiplication_of_twodigit_number(int two_digit_number){
 }
 
 //task48
-int number_obtained_by_rearranging_digits(int two_digit_number){
+int twodigit_number_obtained_by_rearranging_digits(int two_digit_number){
     return (two_digit_number % 10 * 10) + (two_digit_number / 10);
 }
+
+//task49
+int first_digit_out_of_hundreds(int three_digit_number){
+    return three_digit_number / 100;
+}
+
 
 
 
