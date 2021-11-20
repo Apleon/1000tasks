@@ -654,6 +654,27 @@ int crossed_out_first_digit_on_right_and_attributed_to_right(int three_digit_num
     return (three_digit_number % 10) * 100 + (three_digit_number / 100) * 10 + (three_digit_number % 100 / 10);
 }
 
+//task55.1
+int number_obtained_by_rearranging_hundreds(int three_digit_number){
+    return three_digit_number / 100;
+}
+
+//task55.2
+int number_obtained_by_rearranging_dozens(int three_digit_number){
+    return (three_digit_number / 10) % 10;
+}
+
+//task55.3
+int number_obtained_by_rearranging_orig_number(int three_digit_number){
+    return three_digit_number % 10;
+}
+
+//task 55
+int num_obtained_by_permuting_digits_of_hundr_and_tens_of_orig_num(int three_digit_number){
+    return number_obtained_by_rearranging_dozens(three_digit_number) * 100 + number_obtained_by_rearranging_hundreds(three_digit_number) * 10 + number_obtained_by_rearranging_orig_number(three_digit_number);
+}
+
+
 
 
 

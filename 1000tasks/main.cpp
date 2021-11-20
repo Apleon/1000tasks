@@ -114,6 +114,9 @@ int main(){
     std::cout << crossed_out_first_digit_on_left_and_attributed_to_right(687) << std::endl;
     std::cout <<"task54##################" << std::endl;
     std::cout << crossed_out_first_digit_on_right_and_attributed_to_right(783) << std::endl;
+    std::cout <<"task55##################" << std::endl;
+    std::cout << num_obtained_by_permuting_digits_of_hundr_and_tens_of_orig_num(123) << std::endl;
+
     
     
     
