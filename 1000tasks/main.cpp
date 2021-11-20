@@ -106,6 +106,9 @@ int main(){
     std::cout << first_digit_out_of_hundreds(120) << std::endl;
     std::cout <<"task50##################" << std::endl;
     units_dozens_of_number_three_digit_number(153);
+    std::cout <<"task51##################" << std::endl;
+    sum_and_multiplication_of_numbers_three_digit_number(188);
+    
     
     
   
