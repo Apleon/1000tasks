@@ -639,6 +639,11 @@ void sum_and_multiplication_of_numbers_three_digit_number(int three_digit_number
     std::cout << sum_of_of_numbers_three_digit_number(three_digit_number) << std::endl << mult_of_of_numbers_three_digit_number(three_digit_number) << std::endl;
 }
 
+//task52
+int three_digit_number_from_right_to_left(int three_digit_number){
+    return (three_digit_number % 10) * 100 + (three_digit_number % 100 / 10) * 10 + (three_digit_number / 100);
+}
+
 
 
 
