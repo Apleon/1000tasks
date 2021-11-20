@@ -674,6 +674,10 @@ int num_obtained_by_permuting_digits_of_hundr_and_tens_of_orig_num(int three_dig
     return number_obtained_by_rearranging_dozens(three_digit_number) * 100 + number_obtained_by_rearranging_hundreds(three_digit_number) * 10 + number_obtained_by_rearranging_orig_number(three_digit_number);
 }
 
+//task 56
+int num_obtained_by_permuting_digits_of_tens_and_units_of_orig_num(int theree_digit_number){
+    return (theree_digit_number / 100) * 100 + (theree_digit_number % 10) * 10 + (theree_digit_number % 100 / 10);
+}
 
 
 
