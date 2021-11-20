@@ -570,9 +570,22 @@ int dozens(int two_digit_number){
 int units(int two_digit_number){
     return two_digit_number % 10;
 }
-
-void dozens_and_units_of_dozens(int two_digit_number){
+//task46
+void dozens_and_units_of_number(int two_digit_number){
     std::cout << dozens(two_digit_number) << std::endl << units(two_digit_number) << std::endl;
+}
+
+//task47.1
+int sum_of_twodigit_number(int two_digit_number){
+    return dozens(two_digit_number) + units(two_digit_number);
+}
+//task47.2
+int multiplication_of_twodigit_number(int two_digit_number){
+    return dozens(two_digit_number) * units(two_digit_number);
+}
+//task47
+void sum_and_miltiplication_of_twodigit_number(int two_digit_number){
+    std::cout << sum_of_twodigit_number(two_digit_number) << std::endl << multiplication_of_twodigit_number(two_digit_number) << std::endl;
 }
 
 
