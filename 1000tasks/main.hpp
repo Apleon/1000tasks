@@ -561,6 +561,21 @@ int length_of_unoccupied_part_of_segment_a(int segment_a, int segments_b){
     }
 }
 
+//task46.1
+int dozens(int two_digit_number){
+    return two_digit_number / 10;
+}
+
+//task46.2
+int units(int two_digit_number){
+    return two_digit_number % 10;
+}
+
+void dozens_and_units_of_dozens(int two_digit_number){
+    std::cout << dozens(two_digit_number) << std::endl << units(two_digit_number) << std::endl;
+}
+
+
 
 
 

@@ -96,6 +96,9 @@ int main(){
     std::cout << number_of_segments_b_placed_on_segment_a(6, 3) << std::endl;
     std::cout <<"task45##################" << std::endl;
     std::cout << length_of_unoccupied_part_of_segment_a(7, 3) << std::endl;
+    std::cout <<"task46##################" << std::endl;
+    dozens_and_units_of_dozens(12);
+    
    
     
     
