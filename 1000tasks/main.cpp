@@ -110,6 +110,8 @@ int main(){
     sum_and_multiplication_of_numbers_three_digit_number(188);
     std::cout <<"task52##################" << std::endl;
     std::cout << three_digit_number_from_right_to_left(228);
+    std::cout <<"task53##################" << std::endl;
+    std::cout << crossed_out_first_digit_on_left_and_attributed_to_right(687) << std::endl;
     
     
     
