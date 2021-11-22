@@ -118,42 +118,12 @@ int main(){
     std::cout << num_obtained_by_permuting_digits_of_hundr_and_tens_of_orig_num(123) << std::endl;
     std::cout <<"task56##################" << std::endl;
     std::cout << num_obtained_by_permuting_digits_of_tens_and_units_of_orig_num(123) << std::endl;
-
     
     
     
     
     
     
-    
-  
-     
     
    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-
-   
-    
-    
-    
-    
-    
-    
-    
 }
