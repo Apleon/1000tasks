@@ -903,8 +903,27 @@ int determine_number_of_day_of_week_starts_from_saturday(int integer){
     return ((integer + 4) % 7) + 1;
 }
 
-
-
+//task68.1
+int determine_number_of_day_of_week_per_week(int days_in_year, int days_in_week){
+    if (days_in_week < 1.0 || days_in_week > 7.0){
+        throw "number must be > 1 and < 7";
+    }
+    return  days_in_week - 2;
+}
+//task68.2
+int determine_number_of_day_of_week_per_year(int days_in_year, int days_in_week){
+    if (days_in_year < 1 || days_in_year > 365){
+        throw "number must be > 1 and < 365";
+    }
+        
+    return ((days_in_year
+             + determine_number_of_day_of_week_per_week(days_in_year, days_in_week))
+            % 7) + 1;
+}
+//task68
+void determine_number_of_day_of_week_conclusion(int days_in_year, int days_in_week){
+    std::cout << determine_number_of_day_of_week_per_year(days_in_year, days_in_week) << std::endl;
+}
 
 
 

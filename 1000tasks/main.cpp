@@ -140,6 +140,9 @@ int main(){
     std::cout << determine_number_of_day_of_week_starts_from_tuesday(30) << std::endl;
     std::cout <<"task67##################" << std::endl;
     std::cout << determine_number_of_day_of_week_starts_from_saturday(219) << std::endl;
+    std::cout <<"task68##################" << std::endl;
+    determine_number_of_day_of_week_conclusion(264, 5);
+    
     
     
     
