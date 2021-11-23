@@ -118,6 +118,37 @@ int main(){
     std::cout << num_obtained_by_permuting_digits_of_hundr_and_tens_of_orig_num(123) << std::endl;
     std::cout <<"task56##################" << std::endl;
     std::cout << num_obtained_by_permuting_digits_of_tens_and_units_of_orig_num(123) << std::endl;
+    std::cout <<"task57##################" << std::endl;
+    std::cout << number_corresponding_category_of_hundreds(2334) << std::endl;
+    std::cout <<"task58##################" << std::endl;
+    std::cout << number_corresponding_category_of_thousands(3445) << std::endl;
+    std::cout <<"task59##################" << std::endl;
+    std::cout << number_of_full_minutes_have_passed_since_beginning_of_day(1200) << std::endl;
+    std::cout <<"task60##################" << std::endl;
+    std::cout << number_of_full_hours_have_passed_since_beginning_of_day(12000) << std::endl;
+    std::cout <<"task61##################" << std::endl;
+    std::cout << number_of_seconds_have_passed_since_beginning_of_last_minute(453) << std::endl;
+    std::cout <<"task62##################" << std::endl;
+    std::cout << number_of_seconds_have_passed_since_beginning_of_last_hour(120) << std::endl;
+    std::cout <<"task63##################" << std::endl;
+    std::cout << number_of_full_minutes_have_passed_since_beginning_of_last_hour(123) << std::endl;
+    std::cout <<"task64##################" << std::endl;
+    std::cout << determine_number_of_day_of_week(13) << std::endl;
+    std::cout <<"task65##################" << std::endl;
+    std::cout << determine_number_of_day_of_week_starts_from_thursday(23) << std::endl;
+    std::cout <<"task66##################" << std::endl;
+    std::cout << determine_number_of_day_of_week_starts_from_tuesday(30) << std::endl;
+    std::cout <<"task67##################" << std::endl;
+    std::cout << determine_number_of_day_of_week_starts_from_saturday(219) << std::endl;
+    
+    
+    
+    
+    
+    
+
+    
+    
     
     
     

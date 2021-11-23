@@ -553,6 +553,16 @@ int distance_between_cars_2(int speed_car_1, int speed_car_2, int distance, int 
 }
 
 //task 38
+//double equation(int ratio_a, int ratio_b)
+//    try{
+//        if (ratio_a == 0){
+//            throw "You pass wrong values";
+//        }
+//    }
+//    catch (...) {
+//        return -ratio_b / ratio_a;
+//    }
+
 int equation(int ratio_a, int ratio_b){
     if (ratio_a == 0){
         throw "You pass wrong values";
@@ -585,6 +595,45 @@ void roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
            throw "The discriminant is less than 0, the roots are insubstantial.";
        }
 }
+//class for_task40(){
+//public:
+//    double ratio_a_1;
+//    double ratio_b_1;
+//    double ratio_c_1;
+//    double ratio_a_2;
+//    double ratio_b_2;
+//    double ratio_c_2;
+//
+//    for_task40(){
+//        ratio_a_1 = 2;
+//        ratio_b_1 = 3;
+//        ratio_c_1 = 4;
+//        ratio_a_2 = 5;
+//        ratio_b_2 = 6;
+//        ratio_c_2 = 7;
+//    }
+//    for_task40 ( double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2;){
+//        ratio_a_1 = ratio_a_1_u;
+//        ratio_b_1 = ratio_b_1_u;
+//        ratio_c_1 = ratio_c_1_u;
+//        ratio_a_2 = ratio_a_2_u;
+//        ratio_b_2 = ratio_b_2_u;
+//        ratio_c_2 = ratio_c_2_u;
+//    }
+//    double ratio_d(){
+//        return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1
+//    }
+//    double coordinate_x(){
+//        double temp_1 = (ratio_c_1 * ratio_b_2 - ratio_c_2 * ratio_b_1);
+//        double temp_2 = ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
+//        return temp_1 / temp_2;
+//    }
+//    double coordinate_y(){
+//        return (ratio_a_1 * ratio_c_2 - ratio_a_2 * ratio_c_1) /
+//            ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
+//    }
+//
+//}
 //task40.1
 double ratio_d(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
     return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
@@ -782,7 +831,85 @@ int num_obtained_by_permuting_digits_of_tens_and_units_of_orig_num(int theree_di
 }
 
 //task 57
- 
+int number_corresponding_category_of_hundreds(int number){
+    if (number <= 999){
+        throw "number must be > 999";
+    }
+    return number % 1000 / 100;
+}
+
+//task 58
+int number_corresponding_category_of_thousands(int number){
+    if (number <= 999){
+        throw "number must be > 999";
+    }
+    return number % 10000/1000;
+}
+
+//task 59
+int number_of_full_minutes_have_passed_since_beginning_of_day(int seconds){
+    return seconds / 60;
+}
+
+//task 60
+int number_of_full_hours_have_passed_since_beginning_of_day(int seconds){
+    return seconds / 60 / 60;
+}
+    
+//task61
+int number_of_seconds_have_passed_since_beginning_of_last_minute(int seconds){
+    return seconds % 60;
+}
+
+//task62
+int number_of_seconds_have_passed_since_beginning_of_last_hour(int seconds){
+    return seconds % 3600;
+}
+
+//task63
+int number_of_full_minutes_have_passed_since_beginning_of_last_hour(int seconds){
+    return seconds % 3600 / 60;
+}
+
+//task64
+int determine_number_of_day_of_week(int integer){
+    if (integer < 1 || integer > 365){
+        throw "number must be > 1 and < 365";
+    }
+    return integer % 7;
+}
+
+//task65
+int determine_number_of_day_of_week_starts_from_thursday(int integer){
+    if (integer < 1 || integer > 365){
+        throw "number must be > 1 and < 365";
+    }
+    return (integer + 3) % 7;
+}
+
+//task66
+int determine_number_of_day_of_week_starts_from_tuesday(int integer){
+    if (integer < 1 || integer > 365){
+        throw "number must be > 1 and < 365";
+    }
+    return  (integer % 7) + 1;
+}
+
+//task67
+int determine_number_of_day_of_week_starts_from_saturday(int integer){
+    if (integer < 1 || integer > 365){
+        throw "number must be > 1 and < 365";
+    }
+    return ((integer + 4) % 7) + 1;
+}
+
+
+
+
+
+
+
+
 
 
 
