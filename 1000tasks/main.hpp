@@ -925,6 +925,28 @@ void determine_number_of_day_of_week_conclusion(int days_in_year, int days_in_we
     std::cout << determine_number_of_day_of_week_per_year(days_in_year, days_in_week) << std::endl;
 }
 
+//task 69.1
+int max_possible_num_of_squares_on_rectangle(int positive_integer_a, int positive_integer_b, int positive_integer_c){
+    return positive_integer_a * positive_integer_b;
+}
+//task 69.2
+int area_of_unoccupied_part_of_rectangle(int positive_integer_c){
+    return positive_integer_c * positive_integer_c;
+}
+//task69
+int number_of_squares_placed_on_rectangle(int positive_integer_a, int positive_integer_b, int positive_integer_c){
+    return max_possible_num_of_squares_on_rectangle(positive_integer_a, positive_integer_b, positive_integer_c) /
+    area_of_unoccupied_part_of_rectangle(positive_integer_c);
+}
+
+//task70
+int determine_appropriate_century_number(int number_of_certain_year){
+    if (number_of_certain_year < 0){
+        throw "number must be > 0";
+    }
+    return (number_of_certain_year / 100) + 1;
+}
+
 
 
 

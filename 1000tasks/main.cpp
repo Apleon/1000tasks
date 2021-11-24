@@ -142,6 +142,11 @@ int main(){
     std::cout << determine_number_of_day_of_week_starts_from_saturday(219) << std::endl;
     std::cout <<"task68##################" << std::endl;
     determine_number_of_day_of_week_conclusion(264, 5);
+    std::cout <<"task69##################" << std::endl;
+    std::cout << number_of_squares_placed_on_rectangle(8, 6, 4) << std::endl;
+    std::cout <<"task70##################" << std::endl;
+    std::cout << determine_appropriate_century_number(2021) << std::endl;
+    
     
     
     
