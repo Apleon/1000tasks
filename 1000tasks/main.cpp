@@ -146,6 +146,23 @@ int main(){
     std::cout << number_of_squares_placed_on_rectangle(8, 6, 4) << std::endl;
     std::cout <<"task70##################" << std::endl;
     std::cout << determine_appropriate_century_number(2021) << std::endl;
+    std::cout <<"task71##################" << std::endl;
+    std::cout << check_positivity(543) << std::endl;
+    std::cout <<"task72##################" << std::endl;
+    std::cout << check_even(4) << std::endl;
+    std::cout <<"task73##################" << std::endl;
+    std::cout << check_odd(3) << std::endl;
+    std::cout <<"task74##################" << std::endl;
+    std::cout << check_truth_of_statement(3, 1) << std::endl;
+    std::cout <<"task75##################" << std::endl;
+    std::cout << check_truth_of_statement_2(0,1) << std::endl;
+    std::cout <<"task76##################" << std::endl;
+    std::cout << double_inequality_is_true_or_not(1, 2, 4) << std::endl;
+    
+    
+    
+    
+    
     
     
     

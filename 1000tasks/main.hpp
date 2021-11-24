@@ -946,7 +946,63 @@ int determine_appropriate_century_number(int number_of_certain_year){
     }
     return (number_of_certain_year / 100) + 1;
 }
+//task71
+int check_positivity(int integer_a){
+    if (integer_a > 0) {
+            return 0;
+        }
+        else {
+           return 1;
+        }
+}
+//task72
+int check_even(int integer_a){
+    if (integer_a % 2) {
+            return 0;
+        }
+        else {
+           return 1;
+        }
+}
+//task73
+int check_odd(int integer_a){
+    if (integer_a % 2) {
+            return 0;
+        }
+        else {
+           return 1;
+        }
+}
 
+//task74
+int check_truth_of_statement(int integer_a, int integer_b){
+    if (integer_a > 2 && integer_b <= 3) {
+     return 0;
+     }
+     else {
+     return 1;
+     }
+}
+
+//task75
+int check_truth_of_statement_2(int integer_a, int integer_b){
+    if (integer_a >= 0 && integer_b < -2) {
+     return 0;
+     }
+     else {
+     return 1;
+     }
+}
+
+//task76
+int double_inequality_is_true_or_not(int integer_a, int integer_b, int integer_c){
+    if (integer_a < integer_b && integer_b < integer_c) {
+     return 0;
+     }
+     else {
+     return 1;
+     }
+}
 
 
 
