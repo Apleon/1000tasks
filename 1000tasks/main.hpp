@@ -538,7 +538,6 @@ void price_chocolate_and_toffes_candies_price_difference(double candies_kilogram
 int path_covered_by_boat(int speed, int flow_rate, int driving_time_on_lake, int driving_time_on_river){
     if (flow_rate > speed){
         throw "You pass wrong values";
-        return 1;
     }
     return speed * driving_time_on_lake + (speed - flow_rate) * driving_time_on_river;
 }
@@ -595,8 +594,8 @@ void roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
            throw "The discriminant is less than 0, the roots are insubstantial.";
        }
 }
-//class for_task40(){
-//public:
+//class for_task40{
+//private:
 //    double ratio_a_1;
 //    double ratio_b_1;
 //    double ratio_c_1;
@@ -612,16 +611,16 @@ void roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
 //        ratio_b_2 = 6;
 //        ratio_c_2 = 7;
 //    }
-//    for_task40 ( double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2;){
-//        ratio_a_1 = ratio_a_1_u;
-//        ratio_b_1 = ratio_b_1_u;
-//        ratio_c_1 = ratio_c_1_u;
-//        ratio_a_2 = ratio_a_2_u;
-//        ratio_b_2 = ratio_b_2_u;
-//        ratio_c_2 = ratio_c_2_u;
+//    for_task40 ( double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+//        this; ratio_a_1 = ratio_a_1;
+//        this; ratio_b_1 = ratio_b_1;
+//        this; ratio_c_1 = ratio_c_1;
+//        this; ratio_a_2 = ratio_a_2;
+//        this; ratio_b_2 = ratio_b_2;
+//        this; ratio_c_2 = ratio_c_2;
 //    }
 //    double ratio_d(){
-//        return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1
+//        return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
 //    }
 //    double coordinate_x(){
 //        double temp_1 = (ratio_c_1 * ratio_b_2 - ratio_c_2 * ratio_b_1);
@@ -633,7 +632,7 @@ void roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
 //            ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
 //    }
 //
-//}
+//};
 //task40.1
 double ratio_d(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
     return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
@@ -678,7 +677,6 @@ double number_of_segments_b_placed_on_segment_a(int segment_a, int segments_b){
     }
     else{
         throw "You pass wrong values";
-        return 1;
     }
 }
 
@@ -689,7 +687,6 @@ int length_of_unoccupied_part_of_segment_a(int segment_a, int segments_b){
     }
     else{
         throw "You pass wrong values";
-        return 1;
     }
 }
 
@@ -952,26 +949,26 @@ int check_positivity(int integer_a){
             return 0;
         }
         else {
-           return 1;
+            throw "number must be > 0";
         }
 }
 //task72
-int check_even(int integer_a){
-    if (integer_a % 2) {
-            return 0;
-        }
-        else {
-           return 1;
-        }
-}
-//task73
 int check_odd(int integer_a){
     if (integer_a % 2) {
             return 0;
         }
         else {
-           return 1;
+            throw "number must be divisible with the remainder by 2";
         }
+}
+//task73
+int check_even(int integer_a){
+    if (integer_a % 2) {
+        return 0;
+    }
+    else {
+        throw "number must be divisible with the remainder by 2";
+    }
 }
 
 //task74
@@ -980,29 +977,86 @@ int check_truth_of_statement(int integer_a, int integer_b){
      return 0;
      }
      else {
-     return 1;
+         throw "number must be > 2 and <= 3";
      }
 }
 
 //task75
 int check_truth_of_statement_2(int integer_a, int integer_b){
     if (integer_a >= 0 && integer_b < -2) {
-     return 0;
+        return 0;
      }
      else {
-     return 1;
+         throw "numbers must be >= 0 and < - 2";
      }
 }
 
 //task76
 int double_inequality_is_true_or_not(int integer_a, int integer_b, int integer_c){
     if (integer_a < integer_b && integer_b < integer_c) {
-     return 0;
+        return 0;
      }
      else {
-     return 1;
+         throw "number_a must be < number_b and number_b < number_c";
      }
 }
+//task77
+int number_between_numbers(int integer_a, int integer_b, int integer_c){
+    if (integer_b > integer_a && integer_b < integer_c){
+     return 0;
+     }
+    if (integer_b < integer_a && integer_b > integer_c){
+        return 0;
+     }
+     else {
+        throw "you pass wrong values";
+     }
+}
+
+//task78
+int all_numbers_are_odd(int integer_a, int integer_b){
+    if (integer_a % 2 && integer_b % 2){
+        return 0;
+    }
+    else {
+        throw "number_a must be divisible with the remainder by 2 and number_b do the same thing";
+    }
+}
+
+//task79
+int at_least_one_number_odd(int integer_a, int integer_b){
+    if (integer_a % 2 || integer_b % 2){
+        return 0;
+    }
+    else {
+        throw "at_least_one_number must be divisible with the remainder by 2";
+    }
+}
+
+//task80
+bool exactly_one_number_odd(int integer_a, int integer_b){
+    if((integer_a % 2 != 0 && integer_b % 2 == 0) || (integer_a % 2 == 0 && integer_b % 2 != 0)){
+        return true;
+    }
+    return false;
+}
+
+//task81
+bool numbers_have_same_parity(int integer_a, int integer_b){
+    if((integer_a % 2 == 0 && integer_b % 2 == 0) || (integer_a % 2 != 0 && integer_b % 2 != 0)){
+        return true;
+    }
+    return false;
+}
+//task82
+bool numbers_are_positive(int integer_a, int integer_b, int integer_c){
+    if (integer_a > 0 && integer_b > 0 && integer_c > 0){
+        return true;
+    }
+    return false;
+}
+//task83
+
 
 
 

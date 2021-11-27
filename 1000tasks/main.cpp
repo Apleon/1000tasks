@@ -149,15 +149,30 @@ int main(){
     std::cout <<"task71##################" << std::endl;
     std::cout << check_positivity(543) << std::endl;
     std::cout <<"task72##################" << std::endl;
-    std::cout << check_even(4) << std::endl;
+    std::cout << check_odd(5) << std::endl;
     std::cout <<"task73##################" << std::endl;
-    std::cout << check_odd(3) << std::endl;
+    std::cout << check_even(3) << std::endl;
     std::cout <<"task74##################" << std::endl;
     std::cout << check_truth_of_statement(3, 1) << std::endl;
     std::cout <<"task75##################" << std::endl;
-    std::cout << check_truth_of_statement_2(0,1) << std::endl;
+    std::cout << check_truth_of_statement_2(0, -3) << std::endl;
     std::cout <<"task76##################" << std::endl;
     std::cout << double_inequality_is_true_or_not(1, 2, 4) << std::endl;
+    std::cout <<"task77##################" << std::endl;
+    std::cout << number_between_numbers(2, 4, 6) << std::endl;
+    std::cout <<"task78##################" << std::endl;
+    std::cout << all_numbers_are_odd(1, 3) << std::endl;
+    std::cout <<"task79##################" << std::endl;
+    std::cout << at_least_one_number_odd(5, 2) << std::endl;
+    std::cout <<"task80##################" << std::endl;
+    std::cout << exactly_one_number_odd(16, 1) << std::endl;
+    std::cout <<"task81##################" << std::endl;
+    std::cout << numbers_have_same_parity(13, 5) << std::endl;
+    std::cout <<"task82##################" << std::endl;
+    std::cout << numbers_are_positive(5, 1, 6) << std::endl;
+    
+    
+    
     
     
     
