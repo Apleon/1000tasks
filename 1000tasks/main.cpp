@@ -170,8 +170,18 @@ int main(){
     std::cout << numbers_have_same_parity(13, 5) << std::endl;
     std::cout <<"task82##################" << std::endl;
     std::cout << numbers_are_positive(5, 1, 6) << std::endl;
-    
-    
+    std::cout <<"task83##################" << std::endl;
+    std::cout << at_least_one_number_positive(5, 1, 6) << std::endl;
+    std::cout <<"task84##################" << std::endl;
+    std::cout << exactly_one_of_numbers_positive(-1, -2, 6) << std::endl;
+    std::cout <<"task85##################" << std::endl;
+    std::cout << exactly_two_of_numbers_positive(-1, 2, 6) << std::endl;
+    std::cout <<"task86##################" << std::endl;
+    std::cout << number_is_even_two_digit(12) << std::endl;
+    std::cout <<"task87##################" << std::endl;
+    std::cout << number_is_odd_three_digit(111) << std::endl;
+    std::cout <<"task88##################" << std::endl;
+    std::cout << among_given_integers_at_least_one_matching_pair(2, 2, 4) << std::endl;
     
     
     
@@ -187,14 +197,6 @@ int main(){
     
     
 
-    
-    
-    
-    
-    
-    
-    
-    
     
    
 }

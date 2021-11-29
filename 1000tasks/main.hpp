@@ -1056,6 +1056,68 @@ bool numbers_are_positive(int integer_a, int integer_b, int integer_c){
     return false;
 }
 //task83
+bool at_least_one_number_positive(int integer_a, int integer_b, int integer_c){
+    if (integer_a > 0 || integer_b > 0 || integer_c > 0){
+        return true;
+    }
+    return false;
+}
+//task84
+bool exactly_one_of_numbers_positive(int integer_a, int integer_b, int integer_c){
+    if ((integer_a > 0 && integer_b < 0 && integer_c < 0)){
+        return true;
+    }
+    if ((integer_a < 0 && integer_b > 0 && integer_c < 0)){
+        return true;
+    }
+    if ((integer_a < 0 && integer_b < 0 && integer_c > 0)){
+        return true;
+    }
+    return false;
+}
+//task85
+bool exactly_two_of_numbers_positive(int integer_a, int integer_b, int integer_c){
+    if ((integer_a > 0 && integer_b > 0 && integer_c < 0)){
+        return true;
+    }
+    if ((integer_a < 0 && integer_b > 0 && integer_c > 0)){
+        return true;
+    }
+    if ((integer_a > 0 && integer_b < 0 && integer_c > 0)){
+        return true;
+    }
+    return false;
+}
+//task86
+bool number_is_even_two_digit(int integer_a){
+    if (integer_a % 2 == 0 && integer_a > 9 && integer_a < 100){
+        return true;
+    }
+    return false;
+        
+}
+//task87
+bool number_is_odd_three_digit(int integer_a){
+    if (integer_a != 0 && integer_a > 99 && integer_a < 1000){
+        return true;
+    }
+    return false;
+}
+//task88
+bool among_given_integers_at_least_one_matching_pair(int integer_a, int integer_b, int integer_c){
+    if (integer_a == integer_c){
+        return true;
+    }
+    if (integer_b == integer_c){
+        return true;
+    }
+    if (integer_b == integer_a){
+        return true;
+    }
+    return false;
+}
+
+
 
 
 
