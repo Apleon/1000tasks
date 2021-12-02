@@ -329,134 +329,235 @@ int perimeter_and_square_of_triangle(int coordinate_x1, int coordinate_y1, int c
     return 0;
 }
 
-////task 22
-//int change_content(veriable_a, veriable_b){
-//    int t = A;
-//    A = B;
-//    B = t;
-//    std::cout << "A = ", A, "B = ", B;
-//    return A, B;
-//}
+//task 22
 
-////task 23
-//int swipe2(int A, int B, int C) {
-//    int t = C;
-//    C = B;
-//    B = A;
-//    A = t;
-//    std::cout << "A = ", A, "B = ", B, "C = ", C;
-//    return A, B, C;
-//}
+int change_content_in_veriables_1(int veriable_a, int veriable_b){
+    veriable_a = (veriable_a + veriable_b);
+    veriable_b = (veriable_a - veriable_b);
+    veriable_a = (veriable_a - veriable_b);
+    std::cout << veriable_a << std::endl<< veriable_b << std::endl;
+    return 0;
+}
+
+
+//task 23
+int change_content_in_veriables_2(int veriable_a, int veriable_b, int veriable_c){
+    veriable_a = (veriable_a + veriable_b + veriable_c);
+    veriable_b = (veriable_a - veriable_b - veriable_c);
+    veriable_c = (veriable_a - veriable_b - veriable_c);
+    veriable_a = (veriable_a - veriable_b - veriable_c);
+    std::cout << veriable_a << std::endl << veriable_b << std::endl << veriable_c << std::endl;
+    return 0;
+}
+
+//task 24
+int change_content_in_veriables_3(int veriable_a, int veriable_b, int veriable_c){
+    veriable_a = (veriable_a + veriable_b + veriable_c);
+    veriable_c = (veriable_a - veriable_b - veriable_c);
+    veriable_b = (veriable_a - veriable_b - veriable_c);
+    veriable_a = (veriable_a - veriable_b - veriable_c);
+    std::cout << veriable_a << std::endl << veriable_b << std::endl << veriable_c << std::endl;
+    return 0;
+}
+
+//task 25
+int function_value_1 (int value_x) {
+    return 3 * pow(value_x, 6) - 6 * pow(value_x, 2) - 7;
+}
+
+//task 26
+int function_value_2 (int value_x) {
+    return 4 * pow(value_x - 3, 6) - 7 * pow(value_x - 3, 3) + 2;
+}
 //
-////task 24
-//int swipe3(int A, int B, int C) {
-//    int t = B;
-//    C = A;
-//    B = C;
-//    A = t;
-//    std::cout << "A = ", A, "B = ", B, "C = ", C;
-//    return A, B, C;
-//}
-//
-////task 25
-//int whatFunction1(int x) {
-//    int y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-//    return 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-//}
-//
-////task 26
-//int whatFunktion2(int x) {
-//    int y = 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
-//    return 4 * pow(x - 3, 6) - 7 * pow(x - 3, 3) + 2;
-//}
-//
-////task 27.1
-//int degree_of_a_in_2(int a) {
-//    int a_in_2 = a * a;
-//    return a_in_2;
-//}
-//
-////task 27.2
-//int degree_of_a_in_4(int a) {
-//    int a_int_4 = degree_of_a_in_2(a) * degree_of_a_in_2(a);
-//    return a_int_4;
-//}
-//
-////task 27.3
-//int degree_of_a_in_8(int a) {
-//    int a_in_8 = degree_of_a_in_4(a) * degree_of_a_in_4(a);
-//    return a_in_8;
-//}
-//
-////task 27
-//int degreeOfA(int A) {
-//    std::cout << degree_of_a_in_2(a) << degree_of_a_in_4(a) << degree_of_a_in_8(a);
-//    return 0;
-//}
-//
-////task 28.1
-//int degree_of_a_in_3(int a) {
-//    int a_in_3 = degree_of_a_in_2(a) * a;
-//    return a_in_3;
-//}
-//
-////task 28.2
-//int degree_of_a_in_5(int a) {
-//    int a_in_5 = degree_of_a_in_3(a) * degree_of_a_in_2(a);
-//    return a_in_5;
-//}
-//
-////task 28.3
-//int degree_of_a_in_10(int a) {
-//    int a_in_10 = degree_of_a_in_5(a) * degree_of_a_in_5(a);
-//    return a_in_10;
-//}
-//
-////task 28.4
-//int degree_of_a_in_15(int a) {
-//    int a_in_15 = degree_of_a_in_5(a) * degree_of_a_in_10(a);
-//    return a_in_15;
-//}
-//
-////task 28
-//int degreeOfA2(int A) {
-//    std::cout << degree_of_a_in_2(a) << degree_of_a_in_3(a) << degree_of_a_in_5(a) << degree_of_a_in_10(a) << degree_of_a_in_15(a);
-//    return 0;
-//}
-//
-////task 29
-//int degreesToRadians(double a) {
-//    double p = 3.14;
-//    if (a < 0 || a > 360) {
-//        std::cout << "a must be > 0 and < 360";
-//    }
-//    double rad = ((a * 180) / p) / a;
-//    return rad;
-//}
-//
-////task 30
-//int radiansToDegrees(double a) {
-//    double p = 3.14;
-//    if (a < 0 || a > 2 * p) {
-//        std::cout << "a must be > 0 and < 2 pi";
-//    }
-//    double rad = (a * 180) / p;
-//    double aRad = rad * a;
-//    return aRad;
-//}
-//
-////task 31
-//int fahrenheit_to_celsius_converter(double t) {
-//    return (t - 32) * 5 / 9;
-//}
-//
-////task 32
-//int celsius_to_fahrenheit_converter(double t) {
-//    return (t + 32) / 5 / 9;
-//}
-//
-////task 33
-//int candies_count(int a, int y, int x) {
-//    return 0;
-//}
+//task 27.1
+int squaring_number_a_1(int num_a) {
+    return num_a * num_a;
+}
+
+//task 27.2
+int raising_number_a_to_4th_power_1(int num_a){
+    return squaring_number_a_1(num_a) * squaring_number_a_1(num_a);
+}
+
+//task 27.3
+int raising_number_a_to_8th_power_1(int num_a) {
+    return raising_number_a_to_4th_power_1(num_a) * raising_number_a_to_4th_power_1(num_a);
+}
+
+//task 27
+int all_found_powers_of_number_a_1(int num_a) {
+    std::cout << squaring_number_a_1(num_a) << std::endl << raising_number_a_to_4th_power_1(num_a) << std::endl << raising_number_a_to_8th_power_1(num_a) << std::endl;
+    return 0;
+}
+
+//task 28.1
+int squaring_number_a_2(int num_a) {
+    return num_a * num_a;
+}
+
+int cubing_number_a(int num_a){
+    return pow(num_a, 3);
+}
+//task 28.2
+int raising_number_a_to_5th_power(int num_a) {
+    return cubing_number_a(num_a) * num_a;
+}
+
+//task 28.3
+int raising_number_a_to_10th_power(int num_a){
+    return raising_number_a_to_5th_power(num_a) * raising_number_a_to_5th_power(num_a);
+}
+
+//task 28.4
+int raising_number_a_to_15th_power(int num_a) {
+    return raising_number_a_to_10th_power(num_a) * raising_number_a_to_5th_power(num_a);
+}
+
+//task 28
+int all_found_powers_of_number_a_2(int num_a) {
+    std::cout << squaring_number_a_2(num_a) << std::endl << cubing_number_a(num_a) << std::endl << raising_number_a_to_5th_power(num_a) << std::endl << raising_number_a_to_10th_power(num_a) << std::endl << raising_number_a_to_15th_power(num_a) << std::endl;
+    return 0;
+}
+
+
+//task 29
+double determine_value_of_angle_in_radians_1(int angle_a) {
+    if (angle_a < 0 || angle_a > 360) {
+        std::cout << "angle_a must be > 0 and < 360" << std::endl;
+        return 1;
+    }
+    return (angle_a * M_PI) / 180;
+}
+
+//task 30
+double determine_value_of_angle_in_radians_2(double angle_a) {
+    if (angle_a < 0 || angle_a > 2 * M_PI) {
+        std::cout << "ngle_a must be > 0 and < 2PI";
+        return 1;
+    }
+    return (angle_a * 180) / M_PI;
+}
+
+//task 31
+int convert_farenheit_into_celsius (double temperature) {
+    return (temperature - 32) * 5 / 9;
+}
+
+//task 32
+int convert_celsius_into_farenheit(double temperature) {
+    return (temperature * 9 / 5 + 32);
+}
+
+//task 33.1
+double price_candies_for_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
+    return price_a / candies_kilogram_x;
+}
+//task 33.2
+double price_candies_for_y_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
+    return candies_kilogram_y * price_candies_for_kilogram(candies_kilogram_x, price_a, candies_kilogram_y);
+}
+double price_candies_for_kilogram_and_y_kilogram(double candies_kilogram_x, double price_a, double candies_kilogram_y){
+    std::cout << price_candies_for_kilogram(candies_kilogram_x, price_a, candies_kilogram_y) << std::endl << price_candies_for_y_kilogram(candies_kilogram_x, price_a, candies_kilogram_y) << std::endl;
+    return 0;
+}
+
+//task 34
+double price_chocolate_candies(double candies_kilogram_x, double price_a){
+    return price_a/candies_kilogram_x;
+}
+
+double price_toffes_candie(double candies_kilogram_y, double price_b){
+    return price_b / candies_kilogram_y;
+}
+
+double price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
+    return price_chocolate_candies(candies_kilogram_x, price_a) / price_toffes_candie(candies_kilogram_y, price_b);
+}
+
+double price_chocolate_and_toffes_candies_price_difference(double candies_kilogram_x, double price_a, double candies_kilogram_y, double price_b){
+    std::cout << price_chocolate_candies(candies_kilogram_x, price_a) << std::endl << price_toffes_candie(candies_kilogram_y, price_b) << std::endl << price_difference(candies_kilogram_x, price_a, candies_kilogram_y, price_b) << std::endl;
+    return 0;
+}
+
+//task 35
+int path_covered_by_boat(int speed, int flow_rate, int driving_time_on_lake, int driving_time_on_river){
+    if (flow_rate > speed){
+        std::cout << "You pass wrong values" << std::endl;
+        return 1;
+    }
+    return speed * driving_time_on_lake + (speed - flow_rate) * driving_time_on_river;
+}
+//task 36
+int distance_between_cars(int speed_car_1, int speed_car_2, int distance, int time){
+    return distance + speed_car_1 * time + speed_car_2 * time;
+}
+
+//task 37
+int distance_between_cars_2(int speed_car_1, int speed_car_2, int distance, int time){
+    return abs(distance - (speed_car_1 * time + speed_car_2 * time));
+}
+
+//task 38
+int equation(int ratio_a, int ratio_b){
+    if (ratio_a == 0){
+        std::cout << "You pass wrong values" << std::endl;
+        return 1;
+    }
+    return -ratio_b / ratio_a;
+}
+
+//task 39.1
+double discriminant(int ratio_a, int ratio_b, int ratio_c){
+    return pow(ratio_b, 2) - 4 * ratio_a * ratio_c;
+}
+
+//task 39.1
+double root_x1(int ratio_a, int ratio_b, int ratio_c){
+    return -1 * ratio_b + sqrt(discriminant(ratio_a, ratio_b, ratio_c)) / (2 * ratio_a);
+}
+double root_x2 (int ratio_a, int ratio_b, int ratio_c){
+    return -1 * ratio_b - sqrt(discriminant(ratio_a, ratio_b, ratio_c)) / (2 * ratio_a);
+}
+//task 39
+double roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
+    if(discriminant(ratio_a, ratio_b, ratio_c) >= 0){
+        std::cout << root_x1(ratio_a, ratio_b, ratio_c) << std::endl << root_x2(ratio_a, ratio_b, ratio_c) << std::endl;
+        return 0;
+       }
+    
+       else{
+           std::cout << "The discriminant is less than 0, the roots are insubstantial." << std::endl;
+       }
+       return 1;
+}
+///task40
+double ratio_d(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
+}
+
+double coordinate_x(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    return (ratio_c_1 * ratio_b_2 - ratio_c_2 * ratio_b_1) / ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
+}
+
+double coordinate_y(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    return (ratio_a_1 * ratio_c_2 - ratio_a_2 * ratio_c_1) / ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
+}
+
+double system_of_linear_equations(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
+    std::cout << coordinate_x(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl << coordinate_y(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2) << std::endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 

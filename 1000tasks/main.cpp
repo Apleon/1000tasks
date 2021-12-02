@@ -2,6 +2,7 @@
 #include "main.hpp"
 #include <cmath>
 #include "math.h"
+using namespace std;
 
 int main(){
     setlocale(LC_ALL, "ru");
@@ -49,6 +50,49 @@ int main(){
     std::cout << "task21##################" << std::endl;
     std::cout << perimeter_and_square_of_triangle(4, 5, 2, 3, 5, 3, 4, 3, 2) << std::endl;
     std::cout << "task22##################" << std::endl;
+    std::cout << change_content_in_veriables_1(4, 6) << std::endl;
+    std::cout << "task23##################" << std::endl;
+    std::cout << change_content_in_veriables_2(2, 4, 5) << std::endl;
+    std::cout << "task24##################" << std::endl;
+    std::cout << change_content_in_veriables_3(5, 6, 7) << std::endl;
+    std::cout << "task25##################" << std::endl;
+    std::cout << function_value_1(2) << std::endl;
+    std::cout << "task26##################" << std::endl;
+    std::cout << function_value_2(2) << std::endl;
+    std::cout << "task27##################" << std::endl;
+    std::cout << all_found_powers_of_number_a_1(2) << std::endl;
+    std::cout << "task28##################" << std::endl;
+    std::cout << all_found_powers_of_number_a_2(2) << std::endl;
+    std::cout << "task29##################" << std::endl;
+    std::cout << determine_value_of_angle_in_radians_1(90) << std::endl;
+    std::cout << "task30##################" << std::endl;
+    std::cout << determine_value_of_angle_in_radians_2(3.14) << std::endl;
+    std::cout << "task31##################" << std::endl;
+    std::cout << convert_farenheit_into_celsius(65) << std::endl;
+    std::cout << "task32##################" << std::endl;
+    std::cout << convert_celsius_into_farenheit(5) << std::endl;
+    std::cout << "task33##################" << std::endl;
+    std::cout << price_candies_for_kilogram_and_y_kilogram(4, 6, 8) << std::endl;
+    std::cout << "task34##################" << std::endl;
+    std::cout << price_chocolate_and_toffes_candies_price_difference(2, 6, 4, 2) << std::endl;
+    std::cout << "task35##################" << std::endl;
+    std::cout << path_covered_by_boat(20, 7, 30, 45) << std::endl;
+    std::cout << "task36##################" << std::endl;
+    std::cout << distance_between_cars(40, 60, 40, 2) << std::endl;
+    std::cout << "task37##################" << std::endl;
+    std::cout << distance_between_cars_2(60, 40, 60, 2) << std::endl;
+    std::cout << "task38##################" << std::endl;
+    std::cout << equation(2, 4) << std::endl;
+    std::cout << "task39##################" << std::endl;
+    std::cout << roots_of_quadratic_equation(1, -8, 15) << std::endl;
+    std::cout <<"task40##################" << std::endl;
+    std::cout << system_of_linear_equations(2, 3, 4, 5, 6, 7) << std::endl;
+    
+    
+    
+    
+
+    
 
 
    
