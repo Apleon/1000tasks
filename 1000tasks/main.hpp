@@ -551,16 +551,6 @@ int distance_between_cars_2(int speed_car_1, int speed_car_2, int distance, int 
     return abs(distance - (speed_car_1 * time + speed_car_2 * time));
 }
 
-//task 38
-//double equation(int ratio_a, int ratio_b)
-//    try{
-//        if (ratio_a == 0){
-//            throw "You pass wrong values";
-//        }
-//    }
-//    catch (...) {
-//        return -ratio_b / ratio_a;
-//    }
 
 int equation(int ratio_a, int ratio_b){
     if (ratio_a == 0){
@@ -594,45 +584,7 @@ void roots_of_quadratic_equation(int ratio_a, int ratio_b, int ratio_c){
            throw "The discriminant is less than 0, the roots are insubstantial.";
        }
 }
-//class for_task40{
-//private:
-//    double ratio_a_1;
-//    double ratio_b_1;
-//    double ratio_c_1;
-//    double ratio_a_2;
-//    double ratio_b_2;
-//    double ratio_c_2;
-//
-//    for_task40(){
-//        ratio_a_1 = 2;
-//        ratio_b_1 = 3;
-//        ratio_c_1 = 4;
-//        ratio_a_2 = 5;
-//        ratio_b_2 = 6;
-//        ratio_c_2 = 7;
-//    }
-//    for_task40 ( double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
-//        this; ratio_a_1 = ratio_a_1;
-//        this; ratio_b_1 = ratio_b_1;
-//        this; ratio_c_1 = ratio_c_1;
-//        this; ratio_a_2 = ratio_a_2;
-//        this; ratio_b_2 = ratio_b_2;
-//        this; ratio_c_2 = ratio_c_2;
-//    }
-//    double ratio_d(){
-//        return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
-//    }
-//    double coordinate_x(){
-//        double temp_1 = (ratio_c_1 * ratio_b_2 - ratio_c_2 * ratio_b_1);
-//        double temp_2 = ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
-//        return temp_1 / temp_2;
-//    }
-//    double coordinate_y(){
-//        return (ratio_a_1 * ratio_c_2 - ratio_a_2 * ratio_c_1) /
-//            ratio_d(ratio_a_1, ratio_b_1, ratio_c_1, ratio_a_2, ratio_b_2, ratio_c_2);
-//    }
-//
-//};
+
 //task40.1
 double ratio_d(double ratio_a_1, double ratio_b_1, double ratio_c_1, double ratio_a_2, double ratio_b_2, double ratio_c_2){
     return ratio_a_1 * ratio_b_2 - ratio_a_2 * ratio_b_1;
@@ -1291,6 +1243,59 @@ bool does_field_white(int coordinate_x, int coordinate_y){
 bool fields_have_same_color(int coordinate_x_1, int coordinate_y_1, int coordinate_x_2, int coordinate_y_2){
     if((coordinate_x_1 + coordinate_y_1) % 2 ==
        (coordinate_x_2 + coordinate_y_2) % 2){
+        return true;
+    }
+    return false;
+}
+//task106
+bool does_rook_able_to_move_from_one_field_to_another_in_one_move(int coordinate_x_1, int coordinate_y_1, int coordinate_x_2, int coordinate_y_2){
+    if(coordinate_x_1 == coordinate_x_2){
+        return true;
+    }
+    if(coordinate_y_1 == coordinate_y_2){
+        return true;
+    }
+    return false;
+}
+//task107
+bool does_king_able_to_move_from_one_field_to_another_in_one_move(int coordinate_x_1, int coordinate_y_1, int coordinate_x_2, int coordinate_y_2){
+    if(abs(coordinate_x_1 - coordinate_x_2) <= 1 &&
+       abs(coordinate_y_1 - coordinate_y_2) <= 1){
+        return true;
+    }
+    return false;
+    
+}
+//task108
+bool does_elephant_able_to_move_from_one_field_to_another_in_one_move(int coordinate_x_1, int coordinate_y_1, int coordinate_x_2, int coordinate_y_2){
+    if(abs(coordinate_x_1 - coordinate_x_2) ==
+       abs(coordinate_y_1 - coordinate_y_2)){
+        return true;
+    }
+    return false;
+}
+//taks109
+bool does_queen_able_to_move_from_one_field_to_another_in_one_move(int coordinate_x_1, int coordinate_y_1, int coordinate_x_2, int coordinate_y_2){
+    if(coordinate_x_1 == coordinate_x_2){
+        return true;
+    }
+    if(coordinate_y_1 == coordinate_y_2){
+        return true;
+    }
+    if(coordinate_x_1 - coordinate_y_1 == coordinate_x_2 - coordinate_y_2){
+        return true;
+    }
+    if(coordinate_x_1 + coordinate_y_2 == coordinate_x_2 + coordinate_y_2){
+        return true;
+    }
+    return false;
+}
+//task110
+bool does_hourse_able_to_move_from_one_field_to_another_in_one_move(int coordinate_x_1, int coordinate_y_1, int coordinate_x_2, int coordinate_y_2){
+    if(abs(coordinate_x_1 - coordinate_x_2) == 1 && abs(coordinate_y_1 - coordinate_y_2) == 2){
+        return true;
+    }
+    if(abs(coordinate_x_1 - coordinate_x_2) == 2 && abs(coordinate_y_1 - coordinate_y_2) == 1){
         return true;
     }
     return false;

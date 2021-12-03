@@ -216,6 +216,17 @@ int main(){
     std::cout << does_field_white(1, 4) << std::endl;
     std::cout <<"task105##################" << std::endl;
     std::cout << fields_have_same_color(1, 4, 2, 5) << std::endl;
+    std::cout <<"task106##################" << std::endl;
+    std::cout << does_rook_able_to_move_from_one_field_to_another_in_one_move(2, 4, 2, 5) << std::endl;
+    std::cout <<"task107##################" << std::endl;
+    std::cout << does_king_able_to_move_from_one_field_to_another_in_one_move(2, 4, 1, 5) << std::endl;
+    std::cout <<"task108##################" << std::endl;
+    std::cout << does_elephant_able_to_move_from_one_field_to_another_in_one_move(2, 4, 1, 5) << std::endl;
+    std::cout <<"task109##################" << std::endl;
+    std::cout << does_queen_able_to_move_from_one_field_to_another_in_one_move(2, 4, 2, 5) << std::endl;
+    std::cout <<"task110##################" << std::endl;
+    std::cout << does_hourse_able_to_move_from_one_field_to_another_in_one_move(2, 3, 1, 5) << std::endl;
+    
     
     
     
