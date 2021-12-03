@@ -182,6 +182,44 @@ int main(){
     std::cout << number_is_odd_three_digit(111) << std::endl;
     std::cout <<"task88##################" << std::endl;
     std::cout << among_given_integers_at_least_one_matching_pair(2, 2, 4) << std::endl;
+    std::cout <<"task89##################" << std::endl;
+    std::cout << among_given_integers_at_least_one_pair_of_mutually_opposite(2, -2, 4) << std::endl;
+    std::cout <<"task90##################" << std::endl;
+    std::cout << all_digits_of_three_digit_number_are_different(179) << std::endl;
+    std::cout <<"task91##################" << std::endl;
+    std::cout << digits_of_three_digit_number_form_increasing_sequence(124) << std::endl;
+    std::cout <<"task92##################" << std::endl;
+    std::cout << digits_of_three_digit_number_decreasing_sequence(567) << std::endl;
+    std::cout <<"task93##################" << std::endl;
+    std::cout << four_digit_palindrome_number(1111) << std::endl;
+    std::cout <<"task94##################" << std::endl;
+    std::cout << does_quadratic_equation_have_real_roots(1, -8, 15) << std::endl;
+    std::cout <<"task95##################" << std::endl;
+    std::cout << does_point_lies_in_second_coordinate_quarter(-2, 2) << std::endl;
+    std::cout <<"task96##################" << std::endl;
+    std::cout << does_point_lies_in_fourth_coordinate_quarter(2, -2) << std::endl;
+    std::cout <<"task97##################" << std::endl;
+    std::cout << does_point_lies_in_second_or_third_quarter(-2, 2) << std::endl;
+    std::cout <<"task98##################" << std::endl;
+    std::cout << does_point_lies_in_first_or_third_quarter(-2, -2) << std::endl;
+    std::cout <<"task99##################" << std::endl;
+    std::cout << does_point_lies_in_rectangle_and_sides_are_parallel_coord_axes(2, 2, -3, 4, 5, -6) << std::endl;
+    std::cout <<"task100##################" << std::endl;
+    std::cout << does_triangle_equilateral(4, 4, 4) << std::endl;
+    std::cout <<"task101##################" << std::endl;
+    std::cout << does_triangle_isosceles(4, 4, 2) << std::endl;
+    std::cout <<"task102##################" << std::endl;
+    std::cout << does_triangle_rectangular(5, 5, 0) << std::endl;
+    std::cout <<"task103##################" << std::endl;
+    std::cout << does_there_triange(2, 4, 3) << std::endl;
+    std::cout <<"task104##################" << std::endl;
+    std::cout << does_field_white(1, 4) << std::endl;
+    std::cout <<"task105##################" << std::endl;
+    std::cout << fields_have_same_color(1, 4, 2, 5) << std::endl;
+    
+    
+    
+    
     
     
     
